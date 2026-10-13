@@ -3,7 +3,7 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-10-01T23:15:07.427Z",
+    "generatedAt": "2026-10-13T19:58:47.664Z",
     "totalActivities": 118,
     "totalColumns": 31,
     "minDate": "2026-10-05",
@@ -193,11 +193,11 @@
       "Prioridad": "CRÍTICA",
       "Estado": "NO INICIADA",
       "Avance (%)": 0,
-      "Avance esperado (%)": "0",
-      "Semáforo de avance": "POR INICIAR",
+      "Avance esperado (%)": "0.277777777777778",
+      "Semáforo de avance": "RETRASADA",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": ""
+      "Observaciones": "prueba"
     },
     {
       "_excelRow": 3,
@@ -227,11 +227,11 @@
       "Prioridad": "CRÍTICA",
       "Estado": "NO INICIADA",
       "Avance (%)": 0,
-      "Avance esperado (%)": "0",
-      "Semáforo de avance": "POR INICIAR",
+      "Avance esperado (%)": "0.277777777777778",
+      "Semáforo de avance": "RETRASADA",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": ""
+      "Observaciones": "PRO"
     },
     {
       "_excelRow": 4,
@@ -265,7 +265,7 @@
       "Semáforo de avance": "POR INICIAR",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": ""
+      "Observaciones": "PAPI"
     },
     {
       "_excelRow": 5,
@@ -299,7 +299,7 @@
       "Semáforo de avance": "POR INICIAR",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": ""
+      "Observaciones": "ERES"
     },
     {
       "_excelRow": 6,
