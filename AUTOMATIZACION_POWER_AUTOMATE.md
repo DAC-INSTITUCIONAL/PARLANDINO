@@ -10,7 +10,7 @@ hoja `Plan de Mejoras` y no necesita Office Scripts ni la pestaña
 - Archivo: `Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx`
 - Hoja: `Plan de Mejoras`
 - Tabla: `PlanMejorasAndino`
-- Repositorio: `borispoveda316/PMPARLANDINA`
+- Repositorio: `DAC-INSTITUCIONAL/PARLANDINO`
 - Rama: `main`
 
 ## 1. Crear el flujo
@@ -100,8 +100,8 @@ variables('Indices')
 
 | Campo | Valor |
 |---|---|
-| Propietario del repositorio | `borispoveda316` |
-| Nombre del repositorio | `PMPARLANDINA` |
+| Propietario del repositorio | `DAC-INSTITUCIONAL` |
+| Nombre del repositorio | `PARLANDINO` |
 | Nombre del evento | `actualizar-plan` |
 
 6. En **Carga de eventos**, abre **Expresión** y pega exactamente:

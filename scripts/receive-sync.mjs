@@ -128,5 +128,5 @@ const result = {
 };
 
 await fs.writeFile("plan-data.json", `${JSON.stringify(result, null, 2)}\n`, "utf8");
-await fs.rm(".sync", { recursive: true, force: true });
+await fs.rm(syncDir, { recursive: true, force: true });
 console.log(JSON.stringify({ syncId, complete: true, records: records.length, columns: headers.length }));

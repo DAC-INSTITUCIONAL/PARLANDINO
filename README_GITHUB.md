@@ -7,7 +7,7 @@ autorizada.
 
 Dirección pública:
 
-`https://borispoveda316.github.io/PMPARLANDINA/`
+`https://dac-institucional.github.io/PARLANDINO/`
 
 ## Funcionamiento
 
@@ -29,7 +29,7 @@ que ya puede ver.
 ## Archivos del repositorio
 
 ```text
-PMPARLANDINA/
+PARLANDINO/
 ├── .github/workflows/actualizar-plan.yml
 ├── scripts/receive-sync.mjs
 ├── .nojekyll
@@ -49,12 +49,12 @@ PMPARLANDINA/
 
 ## Configuración de Microsoft Entra ID
 
-La aplicación usa el inquilino, Client ID, enlace del Excel, hoja y Object ID
-del administrador definidos en `microsoft365.config.json`.
+La aplicación usa el inquilino, Client ID, enlace del Excel, hoja y la cuenta
+del administrador (correo institucional) definidos en `microsoft365.config.json`.
 
 En el registro de aplicación agrega como URI de redirección SPA:
 
-`https://borispoveda316.github.io/PMPARLANDINA/`
+`https://dac-institucional.github.io/PARLANDINO/`
 
 Permisos delegados de Microsoft Graph:
 
@@ -62,7 +62,8 @@ Permisos delegados de Microsoft Graph:
 - `Files.ReadWrite`
 
 No debe crearse ni publicarse un secreto de cliente en el sitio. El archivo de
-Excel debe mantenerse con permiso de edición únicamente para Boris; el enlace
+Excel debe mantenerse con permiso de edición únicamente para la cuenta institucional
+(`institucional.jaac@ucacue.edu.ec`); el enlace
 del Excel no debe configurarse como acceso público si se quiere mantenerlo
 restringido.
 

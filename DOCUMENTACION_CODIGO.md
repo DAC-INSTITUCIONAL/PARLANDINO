@@ -284,7 +284,7 @@ Esto describe la guía incluida; no se inspeccionó una ejecución real del fluj
 
 ### Workflow de GitHub
 
-1. Escucha el evento `actualizar-plan-pmparlandina`.
+1. Escucha el evento `actualizar-plan`.
 2. Obtiene el repositorio.
 3. Pasa el contenido del evento a variables de entorno.
 4. Ejecuta `node scripts/receive-sync.mjs`.
@@ -314,7 +314,7 @@ Estos hallazgos proceden del código local; las condiciones de las cuentas y del
 
 | Prioridad | Hallazgo | Consecuencia y cambio a considerar |
 |---|---|---|
-| Alta | Guía envía `actualizar-plan`, workflow escucha `actualizar-plan-pmparlandina` | Un flujo configurado según la guía no activará este workflow. Unificar el nombre |
+| Resuelto | Guía y workflow usan ahora el mismo evento `actualizar-plan` | Sin acción pendiente |
 | Alta | `.gitignore` excluye `.sync/`, pero el workflow usa `git add -A` | Los fragmentos incompletos no se publican en Git. La siguiente ejecución no los recupera; una carga de varios fragmentos no puede completarse con esta estrategia. Diseñar persistencia entre ejecuciones |
 | Alta | Concurrencia agrupada por sync ID e índice | Fragmentos distintos y sincronizaciones distintas pueden ejecutarse simultáneamente. Los reintentos de push no sustituyen una estrategia de ensamblado y orden |
 | Alta | Se elimina toda `.sync` al completar una carga | Si se agrega persistencia, una carga podría borrar fragmentos de otra. Limitar limpieza al lote y controlar antigüedad |
