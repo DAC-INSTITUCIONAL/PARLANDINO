@@ -3,7 +3,7 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-10-13T21:36:28.583Z",
+    "generatedAt": "2026-10-13T21:38:31.953Z",
     "totalActivities": 118,
     "totalColumns": 31,
     "minDate": "2026-10-05",
@@ -265,7 +265,7 @@
       "Semáforo de avance": "POR INICIAR",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": "PAPI"
+      "Observaciones": ""
     },
     {
       "_excelRow": 5,
@@ -299,7 +299,7 @@
       "Semáforo de avance": "POR INICIAR",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": "ERES"
+      "Observaciones": ""
     },
     {
       "_excelRow": 6,
