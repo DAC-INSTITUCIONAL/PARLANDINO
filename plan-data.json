@@ -3,7 +3,7 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-10-14T21:17:29.321Z",
+    "generatedAt": "2026-10-14T21:17:46.544Z",
     "totalActivities": 118,
     "totalColumns": 32,
     "minDate": "2026-10-05",
@@ -193,12 +193,12 @@
       "Medio de verificación": "Resolución y actas de sesión",
       "Criterio de aceptación (evidencia de cumplimiento)": "Equipo conformado y en sesión",
       "Prioridad": "CRÍTICA",
-      "Estado": "NO INICIADA",
-      "Avance (%)": 0,
-      "Avance esperado (%)": "0.333333333333333",
-      "Semáforo de avance": "RETRASADA",
+      "Estado": "CONCLUIDA",
+      "Avance (%)": 100,
+      "Avance esperado (%)": "1",
+      "Semáforo de avance": "CONCLUIDA",
       "Evidencias": "G-01",
-      "Nivel de cumplimiento": "",
+      "Nivel de cumplimiento": "CUMPLE",
       "Observaciones": "",
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAC3ponlSMST7Qd8UJKYrDMAXGRIIZKGBu5co1In5VyzW0?e=vU7Boe"
     },
@@ -2090,7 +2090,7 @@
       "Evidencias": "A-EI04.1",
       "Nivel de cumplimiento": "",
       "Observaciones": "",
-      "Enlace evidencias": ""
+      "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA8eNKgskNtTJb42LBLMvYfASuthNp0Hy7FFxZ3Q4TSZlw?e=yMJoT4"
     },
     {
       "_excelRow": 57,
@@ -2125,7 +2125,7 @@
       "Evidencias": "A-EI04.2",
       "Nivel de cumplimiento": "",
       "Observaciones": "",
-      "Enlace evidencias": ""
+      "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAX2p9-Oi9ZToU_4a_LSHxoAZRRm_PPTnrsWMObrTA7mSg?e=dNeSej"
     },
     {
       "_excelRow": 58,
@@ -2160,7 +2160,7 @@
       "Evidencias": "A-EI05.1",
       "Nivel de cumplimiento": "",
       "Observaciones": "",
-      "Enlace evidencias": ""
+      "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBdd1YEaGeMTJ8VjKBCKHJgAWuzXABn3c5lZG0Xc7aqpbs?e=8onLXn"
     },
     {
       "_excelRow": 59,
