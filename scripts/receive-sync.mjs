@@ -10,7 +10,7 @@ if (!/^[A-Za-z0-9_-]{6,80}$/.test(syncId)) throw new Error("SYNC_ID inválido");
 if (!Number.isInteger(index) || !Number.isInteger(total) || index < 0 || total < 1 || index >= total || total > 30) throw new Error("Índice de fragmento inválido");
 if (!chunk || chunk.length > 60000) throw new Error("Contenido de fragmento inválido");
 
-const syncDir = path.join(".sync", syncId);
+const syncDir = path.join(process.env.SYNC_ROOT || ".sync", syncId);
 await fs.mkdir(syncDir, { recursive: true });
 await fs.writeFile(path.join(syncDir, `${String(index).padStart(3, "0")}.part`), chunk, "utf8");
 
