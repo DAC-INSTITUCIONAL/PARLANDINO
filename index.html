@@ -242,6 +242,8 @@
     .field textarea { min-height: 112px; resize: vertical; }
     .field input[readonly] { color: var(--muted); background: #edf2f5; }
     .field small { color: var(--muted); font-size: .73rem; }
+    .evidence-link { color: var(--teal); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+    .evidence-link:hover { color: var(--navy); }
     .multi-select { position: relative; }
     .multi-select > summary { position: relative; min-height: 42px; padding: 9px 30px 9px 11px; overflow: hidden; border: 1px solid var(--line-strong); border-radius: 9px; color: var(--ink); background: #fff; white-space: nowrap; text-overflow: ellipsis; list-style: none; cursor: pointer; }
     .multi-select > summary::-webkit-details-marker { display: none; }
@@ -595,7 +597,19 @@
       const graphBase = "https://graph.microsoft.com/v1.0";
       const oauthScopes = "openid profile offline_access User.Read Files.ReadWrite";
       const mobileColumns = new Set(["ID", "Variable", "Indicador", "Actividad", "Responsable", "Fecha de fin", "Prioridad", "Estado", "Avance (%)"]);
-      const hiddenColumns = new Set(["Fase", "Organismo"]);
+      const hiddenColumns = new Set(["Fase", "Organismo", "Enlace evidencias"]);
+      const EVIDENCE_LINK_FIELD = "Enlace evidencias";
+      const EVIDENCE_BASE_URL = "https://ucacueedu-my.sharepoint.com/";
+      function evidenceUrl(record) {
+        const raw = plain(record[EVIDENCE_LINK_FIELD]);
+        if (!raw) return "";
+        try {
+          const url = new URL(raw, EVIDENCE_BASE_URL);
+          return url.protocol === "https:" ? url.href : "";
+        } catch {
+          return "";
+        }
+      }
       const keyColumns = ["ID", "Variable", "Código indicador", "Indicador", "Resultado", "Unidad", "Actividad", "Responsable", "Fecha de inicio", "Fecha de fin", "Prioridad", "Estado", "Avance (%)", "Avance esperado (%)", "Semáforo de avance", "Evidencias", "Nivel de cumplimiento", "Observaciones"];
       const longColumns = new Set(["Descripción Indicador", "Fórmula de cálculo", "Descripción del hallazgo", "Descripción de la actividad", "Medida de mitigación", "Producto / Entregable", "Medio de verificación", "Criterio de aceptación (evidencia de cumplimiento)", "Observaciones"]);
       const mediumColumns = new Set(["Variable", "Código indicador", "Indicador", "Resultado", "Unidad", "Actividad", "Responsable", "Semáforo de avance", "Evidencias"]);
@@ -957,6 +971,7 @@
           if (field === "Prioridad") content = `<span class="badge ${norm(value) === "critica" ? "red" : norm(value) === "alta" ? "amber" : ""}">${esc(value)}</span>`;
           if (field === "Estado") content = `<span class="badge ${activityAdvance(record) >= 100 ? "green" : activityAdvance(record) > 0 ? "amber" : "red"}">${esc(value)}</span>`;
           if (field === "Nivel de cumplimiento") content = `<span class="badge ${norm(value) === "cumple" ? "green" : norm(value) === "no cumple" ? "red" : norm(value) === "cumple parcial" ? "amber" : ""}">${esc(value)}</span>`;
+          if (field === "Evidencias" && evidenceUrl(record)) content = `<a class="evidence-link" href="${esc(evidenceUrl(record))}" target="_blank" rel="noopener noreferrer" title="Abrir evidencias en OneDrive">${esc(plain(record.Evidencias) || "Ver evidencias")}</a>`;
           return `<td class="${cls}" data-label="${esc(field)}">${content}</td>`;
         }).join("")}${isEditor() ? `<td><div class="row-actions"><button class="edit-link" type="button" data-edit-row="${record._excelRow}">Editar</button></div></td>` : ""}</tr>`).join("")}</tbody>` : `<tbody><tr><td colspan="${visible.length + (isEditor() ? 1 : 0)}" class="empty">No existen actividades que coincidan con la búsqueda y los filtros.</td></tr></tbody>`;
         $("#activitiesTable").innerHTML = `<table>${header}${body}</table>`;
@@ -1025,8 +1040,9 @@
 
       function renderQuality() {
         const issues = qualityIssues();
-        const missingCells = seed.headers.reduce((sum, field) => sum + state.records.filter(r => r[field] === null || plain(r[field]) === "").length, 0);
-        const totalCells = state.records.length * seed.headers.length;
+        const qualityHeaders = seed.headers.filter(field => field !== EVIDENCE_LINK_FIELD);
+        const missingCells = qualityHeaders.reduce((sum, field) => sum + state.records.filter(r => r[field] === null || plain(r[field]) === "").length, 0);
+        const totalCells = state.records.length * qualityHeaders.length;
         const completeness = totalCells ? 1 - missingCells / totalCells : 0;
         const duplicateCount = state.records.length - unique(state.records.map(r => r.ID)).length;
         $("#qualitySummary").innerHTML = [[`${percentFmt.format(completeness*100)}%`,"Completitud global"],[issues.length,"Controles con observación"],[duplicateCount,"ID duplicados"],[unique(state.records.map(r=>r.Fase)).length,"Variantes de fase"]].map(([v,l]) => `<div class="data-stat"><strong>${esc(v)}</strong><span>${esc(l)}</span></div>`).join("");
@@ -1567,6 +1583,7 @@
         $("#priorityAlerts").addEventListener("click", openDeadline);
         $("#priorityAlerts").addEventListener("keydown", openDeadline);
         $("#activitiesTable").addEventListener("click", event => {
+          if (event.target.closest("a.evidence-link")) return;
           const sortButton = event.target.closest("[data-sort]");
           if (sortButton) {
             const field = sortButton.dataset.sort;
