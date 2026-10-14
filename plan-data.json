@@ -3,7 +3,7 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-10-13T21:38:31.953Z",
+    "generatedAt": "2026-10-14T15:51:02.807Z",
     "totalActivities": 118,
     "totalColumns": 31,
     "minDate": "2026-10-05",
@@ -193,11 +193,11 @@
       "Prioridad": "CRÍTICA",
       "Estado": "NO INICIADA",
       "Avance (%)": 0,
-      "Avance esperado (%)": "0.277777777777778",
+      "Avance esperado (%)": "0.333333333333333",
       "Semáforo de avance": "RETRASADA",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": ""
+      "Observaciones": "gato"
     },
     {
       "_excelRow": 3,
@@ -227,11 +227,11 @@
       "Prioridad": "CRÍTICA",
       "Estado": "NO INICIADA",
       "Avance (%)": 0,
-      "Avance esperado (%)": "0.277777777777778",
+      "Avance esperado (%)": "0.333333333333333",
       "Semáforo de avance": "RETRASADA",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": ""
+      "Observaciones": "oso"
     },
     {
       "_excelRow": 4,
@@ -265,7 +265,7 @@
       "Semáforo de avance": "POR INICIAR",
       "Evidencias": "",
       "Nivel de cumplimiento": "",
-      "Observaciones": ""
+      "Observaciones": "parlandino"
     },
     {
       "_excelRow": 5,
