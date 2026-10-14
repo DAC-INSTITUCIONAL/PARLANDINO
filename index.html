@@ -242,6 +242,14 @@
     .field textarea { min-height: 112px; resize: vertical; }
     .field input[readonly] { color: var(--muted); background: #edf2f5; }
     .field small { color: var(--muted); font-size: .73rem; }
+    .multi-select { position: relative; }
+    .multi-select > summary { position: relative; min-height: 42px; padding: 9px 30px 9px 11px; overflow: hidden; border: 1px solid var(--line-strong); border-radius: 9px; color: var(--ink); background: #fff; white-space: nowrap; text-overflow: ellipsis; list-style: none; cursor: pointer; }
+    .multi-select > summary::-webkit-details-marker { display: none; }
+    .multi-select > summary::after { content: "▾"; position: absolute; top: 9px; right: 11px; color: var(--muted); }
+    .multi-options { position: absolute; z-index: 30; top: calc(100% + 4px); left: 0; min-width: 100%; width: max-content; max-width: min(420px, 90vw); max-height: 320px; overflow: auto; padding: 6px; border: 1px solid var(--line-strong); border-radius: 9px; background: #fff; box-shadow: 0 10px 28px rgba(16, 42, 67, .16); }
+    .multi-options label { display: flex; gap: 8px; align-items: flex-start; padding: 7px 8px; border-radius: 6px; color: var(--ink); font-size: .84rem; font-weight: 400; cursor: pointer; }
+    .multi-options label:hover { background: #f1f5f8; }
+    .multi-options input { flex: none; width: auto; min-height: 0; margin: 3px 0 0; padding: 0; }
     .filter-actions { display: flex; justify-content: flex-end; align-items: end; gap: 8px; }
 
     .table-card { padding: 0; overflow: hidden; }
@@ -497,7 +505,7 @@
         </div>
         <div class="filters">
           <div class="field"><label for="indicatorFilter">Indicador</label><select id="indicatorFilter"><option value="">Todos</option></select></div>
-          <div class="field"><label for="responsibleFilter">Responsable</label><select id="responsibleFilter"><option value="">Todos</option></select></div>
+          <div class="field"><label>Responsable</label><details id="responsibleFilter" class="multi-select"><summary>Todos</summary><div class="multi-options"></div></details></div>
           <div class="field"><label for="priorityFilter">Prioridad</label><select id="priorityFilter"><option value="">Todas</option></select></div>
           <div class="field"><label for="statusFilter">Estado</label><select id="statusFilter"><option value="">Todos</option></select></div>
           <div class="field"><label for="deadlineFilter">Vencimiento</label><select id="deadlineFilter"><option value="">Todos</option><option value="Vencidas">Vencidas</option><option value="Por vencer (30 días)">Por vencer (30 días)</option></select></div>
@@ -607,7 +615,7 @@
         base: new Map(),
         dirty: new Map(),
         search: "",
-        filters: { indicator: "", responsible: "", priority: "", status: "", deadline: "" },
+        filters: { indicator: "", responsible: [], priority: "", status: "", deadline: "" },
         sort: { field: "", dir: "asc" },
         page: 1,
         activeView: "overview",
@@ -872,7 +880,7 @@
         return state.records.filter(record => {
           if (query && !seed.headers.some(field => norm(record[field]).includes(query))) return false;
           if (state.filters.indicator && record.Indicador !== state.filters.indicator) return false;
-          if (state.filters.responsible && !splitResponsible(record).map(norm).includes(norm(state.filters.responsible))) return false;
+          if (state.filters.responsible.length && !splitResponsible(record).some(value => state.filters.responsible.some(selected => norm(selected) === norm(value)))) return false;
           if (state.filters.priority && record.Prioridad !== state.filters.priority) return false;
           if (state.filters.status && record.Estado !== state.filters.status) return false;
           if (state.filters.deadline === "Vencidas" && !isOverdue(record)) return false;
@@ -895,15 +903,25 @@
         });
       }
 
+      function renderResponsibleOptions(values) {
+        const selected = new Set(state.filters.responsible.map(norm));
+        $("#responsibleFilter .multi-options").innerHTML = `<label><input type="checkbox" value=""${selected.size ? "" : " checked"}> Todos</label>` +
+          values.map(value => `<label><input type="checkbox" value="${esc(value)}"${selected.has(norm(value)) ? " checked" : ""}> ${esc(value)}</label>`).join("");
+        const summary = $("#responsibleFilter > summary");
+        const chosen = state.filters.responsible;
+        summary.textContent = !chosen.length ? "Todos" : chosen.length === 1 ? chosen[0] : `${chosen.length} seleccionados`;
+        summary.title = chosen.join(", ");
+      }
+
       function renderFilterOptions() {
         const sets = {
           indicatorFilter: unique(state.records.map(r => r.Indicador)).sort(collator.compare),
-          responsibleFilter: unique(state.records.flatMap(r => splitResponsible(r))).sort(collator.compare),
           priorityFilter: unique(state.records.map(r => r.Prioridad)).sort(collator.compare),
           statusFilter: unique(state.records.map(r => r.Estado)).sort(collator.compare)
         };
-        const filterKeys = { indicatorFilter: "indicator", responsibleFilter: "responsible", priorityFilter: "priority", statusFilter: "status" };
+        const filterKeys = { indicatorFilter: "indicator", priorityFilter: "priority", statusFilter: "status" };
         $("#deadlineFilter").value = state.filters.deadline;
+        renderResponsibleOptions(unique(state.records.flatMap(r => splitResponsible(r))).sort(collator.compare));
         for (const [id, values] of Object.entries(sets)) {
           const select = document.getElementById(id);
           const current = state.filters[filterKeys[id]] ?? select.value;
@@ -945,7 +963,7 @@
         $("#activitiesTitle").textContent = isEditor() ? "Consulta y edición de actividades" : "Consulta de actividades";
         $("#activitiesHelp").textContent = isEditor() ? `La búsqueda revisa las ${seed.headers.length} columnas. Selecciona una fila para actualizarla.` : `La búsqueda revisa las ${seed.headers.length} columnas. Tu cuenta tiene acceso de solo lectura.`;
         $("#resultCount").textContent = `${filtered.length} ${filtered.length === 1 ? "actividad" : "actividades"}`;
-        const active = [state.search ? `búsqueda: “${state.search}”` : "", ...Object.values(state.filters).filter(Boolean)].filter(Boolean);
+        const active = [state.search ? `búsqueda: “${state.search}”` : "", ...Object.values(state.filters).map(value => Array.isArray(value) ? value.join(" o ") : value).filter(Boolean)].filter(Boolean);
         $("#filterSummary").textContent = active.length ? active.join(" · ") : "Sin filtros";
         $("#pageSummary").textContent = `Página ${state.page} de ${pages}`;
         $("#prevPage").disabled = state.page <= 1;
@@ -1060,7 +1078,7 @@
         const params = new URLSearchParams(location.search);
         for (const [param, key] of Object.entries(URL_FILTER_KEYS)) {
           const value = params.get(param) || "";
-          if (key === "search") state.search = value; else state.filters[key] = value;
+          if (key === "search") state.search = value; else if (key === "responsible") state.filters.responsible = params.getAll(param).filter(Boolean); else state.filters[key] = value;
         }
         $("#globalSearch").value = state.search;
         const sortField = params.get("orden");
@@ -1073,7 +1091,8 @@
           const params = new URLSearchParams(location.search);
           for (const [param, key] of Object.entries(URL_FILTER_KEYS)) {
             const value = key === "search" ? state.search : state.filters[key];
-            if (value) params.set(param, value); else params.delete(param);
+            params.delete(param);
+            if (Array.isArray(value)) value.forEach(item => params.append(param, item)); else if (value) params.set(param, value);
           }
           if (state.sort.field) { params.set("orden", state.sort.field); params.set("dir", state.sort.dir); } else { params.delete("orden"); params.delete("dir"); }
           if (state.activeView !== "overview") params.set("vista", state.activeView); else params.delete("vista");
@@ -1529,12 +1548,18 @@
         $$(".tab").forEach(tab => tab.addEventListener("click", () => showView(tab.dataset.view)));
         $$('[data-go]').forEach(button => button.addEventListener("click", () => showView(button.dataset.go)));
         $("#globalSearch").addEventListener("input", event => { state.search = event.target.value; state.page = 1; if (state.activeView !== "activities") showView("activities"); else renderActivities(); });
-        [["indicatorFilter","indicator"],["responsibleFilter","responsible"],["priorityFilter","priority"],["statusFilter","status"],["deadlineFilter","deadline"]].forEach(([id,key]) => $("#"+id).addEventListener("change", event => { state.filters[key] = event.target.value; state.page = 1; renderActivities(); }));
-        $("#clearFiltersButton").addEventListener("click", () => { state.filters = {indicator:"",responsible:"",priority:"",status:"",deadline:""}; state.search=""; $("#globalSearch").value=""; state.page=1; renderActivities(); });
+        [["indicatorFilter","indicator"],["priorityFilter","priority"],["statusFilter","status"],["deadlineFilter","deadline"]].forEach(([id,key]) => $("#"+id).addEventListener("change", event => { state.filters[key] = event.target.value; state.page = 1; renderActivities(); }));
+        $("#responsibleFilter").addEventListener("change", event => {
+          state.filters.responsible = event.target.value ? $$("#responsibleFilter input:checked").map(input => input.value).filter(Boolean) : [];
+          state.page = 1;
+          renderActivities();
+        });
+        document.addEventListener("click", event => { if (!event.target.closest("#responsibleFilter")) $("#responsibleFilter").open = false; });
+        $("#clearFiltersButton").addEventListener("click", () => { state.filters = {indicator:"",responsible: [],priority:"",status:"",deadline:""}; state.search=""; $("#globalSearch").value=""; state.page=1; renderActivities(); });
         const openDeadline = event => {
           const item = event.target.closest("[data-deadline]");
           if (!item || (event.type === "keydown" && event.key !== "Enter")) return;
-          state.filters = { indicator: "", responsible: "", priority: "", status: "", deadline: item.dataset.deadline };
+          state.filters = { indicator: "", responsible: [], priority: "", status: "", deadline: item.dataset.deadline };
           state.search = ""; $("#globalSearch").value = "";
           state.sort = { field: "", dir: "asc" };
           showView("activities");
