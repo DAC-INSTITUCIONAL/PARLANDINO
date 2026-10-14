@@ -518,6 +518,7 @@
             <strong id="resultCount">0 actividades</strong>
             <span id="filterSummary" class="card-sub">Sin filtros</span>
             <span class="spacer"></span>
+            <button id="newActivityButton" class="primary-btn small-btn" type="button" data-editor-only hidden>Nueva actividad</button>
             <button id="exportCsvButton" class="secondary-btn small-btn" type="button" title="Descarga las actividades filtradas y ordenadas, con las columnas visibles">Exportar CSV</button>
             <button id="columnButton" class="secondary-btn small-btn" type="button">29 columnas</button>
           </div>
@@ -973,7 +974,7 @@
           if (field === "Nivel de cumplimiento") content = `<span class="badge ${norm(value) === "cumple" ? "green" : norm(value) === "no cumple" ? "red" : norm(value) === "cumple parcial" ? "amber" : ""}">${esc(value)}</span>`;
           if (field === "Evidencias" && evidenceUrl(record)) content = `<a class="evidence-link" href="${esc(evidenceUrl(record))}" target="_blank" rel="noopener noreferrer" title="Abrir evidencias en OneDrive">${esc(plain(record.Evidencias) || "Ver evidencias")}</a>`;
           return `<td class="${cls}" data-label="${esc(field)}">${content}</td>`;
-        }).join("")}${isEditor() ? `<td><div class="row-actions"><button class="edit-link" type="button" data-edit-row="${record._excelRow}">Editar</button></div></td>` : ""}</tr>`).join("")}</tbody>` : `<tbody><tr><td colspan="${visible.length + (isEditor() ? 1 : 0)}" class="empty">No existen actividades que coincidan con la búsqueda y los filtros.</td></tr></tbody>`;
+        }).join("")}${isEditor() ? `<td><div class="row-actions"><button class="edit-link" type="button" data-edit-row="${record._excelRow}">Editar</button><button class="edit-link" type="button" data-duplicate-row="${record._excelRow}" title="Crear una actividad nueva con los datos de esta">Duplicar</button></div></td>` : ""}</tr>`).join("")}</tbody>` : `<tbody><tr><td colspan="${visible.length + (isEditor() ? 1 : 0)}" class="empty">No existen actividades que coincidan con la búsqueda y los filtros.</td></tr></tbody>`;
         $("#activitiesTable").innerHTML = `<table>${header}${body}</table>`;
         $("#activitiesTitle").textContent = isEditor() ? "Consulta y edición de actividades" : "Consulta de actividades";
         $("#activitiesHelp").textContent = isEditor() ? `La búsqueda revisa las ${seed.headers.length} columnas. Selecciona una fila para actualizarla.` : `La búsqueda revisa las ${seed.headers.length} columnas. Tu cuenta tiene acceso de solo lectura.`;
@@ -1150,9 +1151,9 @@
 
       function openEdit(excelRow) {
         if (!requireEditor()) return;
-        const record = state.records.find(r => Number(r._excelRow) === Number(excelRow));
+        const record = excelRow === "new" ? state.draft : state.records.find(r => Number(r._excelRow) === Number(excelRow));
         if (!record) return;
-        state.editRow = Number(excelRow);
+        state.editRow = excelRow === "new" ? "new" : Number(excelRow);
         $("#editTitle").textContent = `Editar ${record.ID || `fila ${excelRow}`}`;
         $("#editSubtitle").textContent = record.Actividad || "Actividad del plan";
         const editableHeaders = seed.headers.filter(field => !hiddenColumns.has(field));
@@ -1163,7 +1164,73 @@
         ];
         $("#editBody").innerHTML = sections.map(([title,fields]) => `<section class="form-section"><h3>${esc(title)}</h3><div class="form-grid">${fields.map(field => fieldControl(field, record[field])).join("")}</div></section>`).join("");
         $("#editSaveHint").textContent = "Al guardar se actualizará el Excel conectado.";
+        $("#saveEditButton").textContent = "Guardar cambios";
         $("#editDialog").showModal();
+      }
+
+      // Datos propios de cada actividad: no se copian al duplicar.
+      const NEW_ACTIVITY_RESET = new Set(["ID", "Actividad", "Descripción de la actividad", "Avance (%)", "Estado", "Evidencias", "Enlace evidencias", "Nivel de cumplimiento", "Nivel de Cumplimiento", "Observaciones"]);
+      function suggestId(baseId) {
+        const match = /^(.*?)(\d+)$/.exec(plain(baseId));
+        if (!match) return "";
+        const used = new Set(state.records.map(r => plain(r.ID)));
+        for (let n = Number(match[2]) + 1; n < Number(match[2]) + 1000; n++) {
+          const candidate = match[1] + String(n).padStart(match[2].length, "0");
+          if (!used.has(candidate)) return candidate;
+        }
+        return "";
+      }
+      function openNew(baseRow) {
+        if (!requireEditor()) return;
+        if (state.dirty.size) return toast("Primero guarda los cambios pendientes con el botón Guardar.", "error");
+        const base = baseRow ? state.records.find(r => Number(r._excelRow) === Number(baseRow)) : null;
+        const draft = Object.fromEntries(seed.headers.map(field => [field, base && !NEW_ACTIVITY_RESET.has(field) ? base[field] : ""]));
+        draft.ID = base ? suggestId(base.ID) : "";
+        draft["Avance (%)"] = 0;
+        draft.Estado = selectOptions.Estado?.[0] || "";
+        state.draft = normalizeRecord(draft);
+        openEdit("new");
+        $("#editTitle").textContent = base ? `Nueva actividad basada en ${base.ID}` : "Nueva actividad";
+        $("#editSubtitle").textContent = base ? "Se copiaron los datos del indicador. Revisa el ID y completa la actividad." : "Completa los datos de la nueva actividad.";
+        $("#editSaveHint").textContent = "Al guardar se agregará una fila al final de la tabla del Excel.";
+        $("#saveEditButton").textContent = "Crear actividad";
+      }
+      function columnIndex(letters) { return [...letters].reduce((n, letter) => n * 26 + letter.charCodeAt(0) - 64, 0) - 1; }
+      async function createActivity(record) {
+        if (!requireEditor()) throw new Error("Inicia sesión con la cuenta administradora.");
+        if (state.dirty.size) throw new Error("Primero guarda los cambios pendientes con el botón Guardar.");
+        state.syncing = true; updateConnectionUI();
+        try {
+          const tables = await graphFetch(sheetPath("/tables?$select=id,name"));
+          const table = tables?.value?.[0];
+          if (!table) throw new Error(`La hoja ${state.config.sheetName} no tiene una tabla de Excel.`);
+          const tablePath = workbookPath(`/tables/${encodeURIComponent(table.id)}`);
+          const header = await graphFetch(`${tablePath}/headerRowRange?$select=values`);
+          const fields = header.values[0].map((name, column) => normalizeHeader(name, column));
+          const known = new Set(seed.headers);
+          // null deja que Excel complete las columnas calculadas de la tabla.
+          const values = fields.map(field => !known.has(field) || readOnlyColumns.has(field) ? null : valueForExcel(field, record[field]));
+          try {
+            await graphFetch(`${tablePath}/rows/add`, { method: "POST", body: JSON.stringify({ index: null, values: [values] }) });
+          } catch (error) {
+            if (error.status !== 400) throw error;
+            await graphFetch(`${tablePath}/rows/add`, { method: "POST", body: JSON.stringify({ index: null, values: [values.map(value => value ?? "")] }) });
+          }
+          // Las columnas de solo lectura toman la fórmula de la fila anterior si Excel no la completó.
+          const body = await graphFetch(`${tablePath}/dataBodyRange?$select=address,formulasR1C1`);
+          const rows = body.formulasR1C1 || [];
+          const start = /^\$?([A-Z]+)\$?(\d+)/.exec(String(body.address).split("!").pop());
+          if (rows.length >= 2 && start) {
+            const previous = rows[rows.length - 2], added = rows[rows.length - 1];
+            const lastRow = Number(start[2]) + rows.length - 1;
+            for (let column = 0; column < fields.length; column++) {
+              const formula = previous[column];
+              if (!readOnlyColumns.has(fields[column]) || typeof formula !== "string" || !formula.startsWith("=") || added[column] === formula) continue;
+              await graphFetch(sheetPath(`/range(address='${colLetter(columnIndex(start[1]) + column)}${lastRow}')`), { method: "PATCH", body: JSON.stringify({ formulasR1C1: [[formula]] }) });
+            }
+          }
+        } finally { state.syncing = false; updateConnectionUI(); }
+        await refreshFromWorkbook(false);
       }
 
       function fieldControl(field, value) {
@@ -1187,7 +1254,7 @@
       async function saveEdit(event) {
         event.preventDefault();
         if (!requireEditor()) return;
-        const record = state.records.find(r => Number(r._excelRow) === state.editRow);
+        const record = state.editRow === "new" ? state.draft : state.records.find(r => Number(r._excelRow) === state.editRow);
         if (!record) return;
         const form = new FormData(event.currentTarget);
         const changed = [];
@@ -1204,6 +1271,17 @@
         if (parseDate(next["Fecha de fin"]) < parseDate(next["Fecha de inicio"])) return toast("La fecha de fin no puede ser anterior al inicio.", "error");
         if (!Number.isFinite(next["Avance (%)"]) || next["Avance (%)"] < 0 || next["Avance (%)"] > 100) return toast("El avance debe estar entre 0 y 100.", "error");
         next["Plazo (días hábiles)"] = businessDays(next["Fecha de inicio"], next["Fecha de fin"]);
+        if (state.editRow === "new") {
+          if (!plain(next.Actividad)) return toast("Escribe la actividad.", "error");
+          try {
+            await createActivity(next);
+            $("#editDialog").close();
+            toast(`Actividad ${next.ID} creada en el Excel.`, "success");
+          } catch (error) {
+            toast(`No se pudo crear la actividad. ${error.message}`, "error");
+          }
+          return;
+        }
         Object.assign(record, next);
         if (changed.length) markDirty(record._excelRow, changed);
         $("#editDialog").close();
@@ -1595,12 +1673,15 @@
           }
           const button = event.target.closest("[data-edit-row]");
           if (button) { openEdit(button.dataset.editRow); return; }
+          const duplicate = event.target.closest("[data-duplicate-row]");
+          if (duplicate) { openNew(duplicate.dataset.duplicateRow); return; }
           const row = event.target.closest("tbody tr");
           if (row && window.matchMedia("(max-width: 620px)").matches) row.classList.toggle("open");
         });
         $("#prevPage").addEventListener("click", () => { state.page--; renderActivities(); });
         $("#nextPage").addEventListener("click", () => { state.page++; renderActivities(); });
         $("#editForm").addEventListener("submit", saveEdit);
+        $("#newActivityButton").addEventListener("click", () => openNew());
         $$('[data-close]').forEach(button => button.addEventListener("click", () => document.getElementById(button.dataset.close).close()));
         $("#connectButton").addEventListener("click", () => state.graph.accessToken ? connectWorkbook().catch(handleError) : startLogin().catch(handleError));
         $("#refreshButton").addEventListener("click", () => refreshFromWorkbook().catch(handleError));
