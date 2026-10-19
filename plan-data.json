@@ -3,7 +3,7 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-10-15T15:09:48.358Z",
+    "generatedAt": "2026-10-19T20:47:15.268Z",
     "totalActivities": 118,
     "totalColumns": 32,
     "minDate": "2026-10-05",
@@ -199,7 +199,7 @@
       "Semáforo de avance": "CONCLUIDA",
       "Evidencias": "G-01",
       "Nivel de cumplimiento": "CUMPLE",
-      "Observaciones": "",
+      "Observaciones": "FGSDFGDFFDG",
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAC3ponlSMST7Qd8UJKYrDMAbYlpTMTb9518c9wrIwf-Og?e=1aLdGn"
     },
     {
@@ -230,7 +230,7 @@
       "Prioridad": "CRÍTICA",
       "Estado": "NO INICIADA",
       "Avance (%)": 0,
-      "Avance esperado (%)": "0.388888888888889",
+      "Avance esperado (%)": "0.5",
       "Semáforo de avance": "RETRASADA",
       "Evidencias": "G-02",
       "Nivel de cumplimiento": "",
