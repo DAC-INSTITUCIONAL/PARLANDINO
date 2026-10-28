@@ -292,6 +292,7 @@
     .indicator-card.governance { border-left-color: var(--teal); }
     .indicator-name strong { display: block; color: var(--navy); }
     .indicator-name span { color: var(--muted); font-size: .78rem; }
+    .indicator-name .indicator-tags { display: block; margin-top: 2px; }
     .mini-stat span { display: block; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .035em; }
     .mini-stat strong { color: var(--navy); font-size: .94rem; }
     .indicator-progress { display: grid; gap: 5px; }
@@ -803,7 +804,7 @@
             advance: avg(rows.map(activityAdvance)),
             schedule: scheduleStats(rows),
             critical: rows.filter(r => norm(r.Prioridad) === "critica").length,
-            codes: unique(rows.map(r => r["Código indicador"])).length,
+            tags: unique(rows.map(r => r["Código indicador"])).sort(collator.compare),
             variables: unique(rows.map(r => r.Variable)).length,
             start: rows.map(r => r["Fecha de inicio"]).filter(Boolean).sort()[0],
             end: rows.map(r => r["Fecha de fin"]).filter(Boolean).sort().at(-1),
@@ -912,15 +913,16 @@
         $("#planningSummary").innerHTML = [[fmtDate(minDate),"Inicio"],[fmtDate(maxDate),"Cierre"],[phases,"Fases"],[variableCount,"Variables"]].map(([v,l]) => `<div class="data-stat"><strong>${esc(v)}</strong><span>${esc(l)}</span></div>`).join("");
       }
 
+      function tagLabel(tags) { return tags.length > 4 ? `${tags[0]} a ${tags.at(-1)}` : tags.join(" · "); }
       function renderIndicators() {
         const items = aggregateIndicators();
         $("#indicatorGrid").innerHTML = items.length ? items.map(item => {
           const level = operationalLevel(item.advance);
           const badgeClass = item.compliance === "CUMPLE" ? "green" : item.compliance === "NO CUMPLE" ? "red" : item.compliance === "CUMPLE PARCIAL" ? "amber" : "";
           return `<article class="indicator-card ${item.governance ? "governance" : ""}">
-            <div class="indicator-name"><strong>${esc(item.name)}</strong><span>${fmtDate(item.start)} – ${fmtDate(item.end)}</span></div>
+            <div class="indicator-name"><strong>${esc(item.name)}</strong><span>${fmtDate(item.start)} – ${fmtDate(item.end)}</span>${item.tags.length ? `<span class="indicator-tags">${esc(tagLabel(item.tags))}</span>` : ""}</div>
             <div class="mini-stat"><span>Actividades</span><strong>${item.activities}</strong></div>
-            <div class="mini-stat"><span>Códigos únicos</span><strong>${item.codes || "—"}</strong></div>
+            <div class="mini-stat"><span>Vencidas</span><strong>${item.schedule.overdue}</strong></div>
             <div class="mini-stat"><span>Críticas</span><strong>${item.critical}</strong></div>
             <div class="indicator-progress"><span class="badge ${item.advance >= 100 ? "green" : item.advance > 0 ? "amber" : "red"}">${esc(level)}</span>${progressBar(item.advance, item.schedule.expected, "teal")}<small class="muted">Real ${percentFmt.format(item.advance)}%${item.schedule.expected === null ? "" : ` · Esperado ${percentFmt.format(item.schedule.expected)}%`}</small>${gapBadge(item.schedule.gap, item.schedule.expected)}</div>
             <span class="badge ${badgeClass}">${esc(item.compliance)}</span>
