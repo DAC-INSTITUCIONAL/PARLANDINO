@@ -1056,7 +1056,6 @@
       function renderStatistics() {
         const priorities = countBy(state.records, "Prioridad");
         const phases = countBy(state.records, "Fase", value => phaseCode(value));
-        const indicators = aggregateIndicators().map(i => [i.name, i.activities]);
         const unitMap = new Map();
         for (const record of state.records) for (const unit of splitResponsible(record)) unitMap.set(unit, (unitMap.get(unit) || 0) + 1);
         const units = [...unitMap.entries()].sort((a,b) => b[1]-a[1] || collator.compare(a[0], b[0])).slice(0,12);
@@ -1080,7 +1079,6 @@
           distribution,
           pieCard("Porcentaje de actividades", "Distribución según el avance registrado", progressLevels, state.records.length),
           barCard("Prioridades", "Cantidad de actividades por prioridad", priorities, "amber"),
-          barCard("Carga por indicador", "Número de actividades asignadas", indicators, "teal"),
           barCard("Fases generales", "Agrupación por código F0–F3", phases, ""),
           scheduleCard("Cronograma por responsable", "Avance real frente al esperado según fechas; ordenado de mayor a menor rezago", [...unitGroups.entries()]),
           barCard("Unidades con mayor participación", "Cada línea de responsable se cuenta como una unidad", units, "teal"),
