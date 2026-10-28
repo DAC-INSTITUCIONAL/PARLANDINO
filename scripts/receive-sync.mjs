@@ -72,7 +72,7 @@ if (Array.isArray(source)) {
   sheetName = previous.metadata?.sheetName || "Plan de Mejoras";
   range = "Tabla PlanMejoras";
   generatedAt = new Date().toISOString();
-  formulaIssue = previous.metadata?.formulaIssue || null;
+  formulaIssue = null; // Power Automate envía solo valores; no se arrastra la nota de la versión anterior.
   holidays = Array.isArray(previous.holidays) ? previous.holidays : [];
 } else if (Array.isArray(source.values) && source.values.length >= 2 && Array.isArray(source.values[0])) {
   const sourceHeaders = source.values[0].map((value) => plain(value));
