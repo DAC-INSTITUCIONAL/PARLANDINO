@@ -3,8 +3,8 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-11-04T20:05:04.404Z",
-    "totalActivities": 118,
+    "generatedAt": "2026-11-04T21:15:36.713Z",
+    "totalActivities": 119,
     "totalColumns": 32,
     "minDate": "2026-10-05",
     "maxDate": "2027-12-17",
@@ -659,6 +659,41 @@
     },
     {
       "_excelRow": 16,
+      "ID": "",
+      "Fase": "",
+      "Variable": "",
+      "Código indicador": "",
+      "Indicador": "",
+      "Descripción Indicador": "",
+      "Tipo de indicador": "",
+      "Organismo": "",
+      "Fórmula de cálculo": "",
+      "Resultado": "0",
+      "Unidad": "No aplica",
+      "Tipo de actividad": "",
+      "Descripción del hallazgo": "",
+      "Actividad": "",
+      "Descripción de la actividad": "",
+      "Medida de mitigación": "",
+      "Responsable": "",
+      "Fecha de inicio": null,
+      "Fecha de fin": null,
+      "Plazo (días hábiles)": "",
+      "Producto / Entregable": "",
+      "Medio de verificación": "",
+      "Criterio de aceptación (evidencia de cumplimiento)": "",
+      "Prioridad": "",
+      "Estado": "",
+      "Avance (%)": 0,
+      "Avance esperado (%)": "",
+      "Semáforo de avance": "",
+      "Evidencias": "",
+      "Nivel de cumplimiento": "",
+      "Observaciones": "",
+      "Enlace evidencias": ""
+    },
+    {
+      "_excelRow": 17,
       "ID": "A-FC05.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
@@ -693,7 +728,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCXlhBifCROQZ7rIFlDF4ThAWSXmMuzVH1k_mgOamfSIEc?e=Zpz5CI"
     },
     {
-      "_excelRow": 17,
+      "_excelRow": 18,
       "ID": "A-FC05.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
@@ -728,7 +763,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDkT15xE4c0Qpmi43tnHMybAR1jx-GhMrp6zodY_g0zKCg?e=urEoBd"
     },
     {
-      "_excelRow": 18,
+      "_excelRow": 19,
       "ID": "A-FC06.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Conocimiento y Formación",
@@ -763,7 +798,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBHbKkWQfmsQ5OT59UsEe7PAUrrWaaOxPjpTmxNmlpYXZk?e=dVSQuG"
     },
     {
-      "_excelRow": 19,
+      "_excelRow": 20,
       "ID": "A-FC06.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
@@ -798,7 +833,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBfhJffZdiNTYpo41_TvnMSAUdb8asy4edbUmdUEew4UMg?e=n5WtNU"
     },
     {
-      "_excelRow": 20,
+      "_excelRow": 21,
       "ID": "A-FC06.3",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
@@ -833,7 +868,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCFu2cYj_uRTK4R2lhGIorKAd_bNvAJ-RHri4-HrM4FpfM?e=MxHcGK"
     },
     {
-      "_excelRow": 21,
+      "_excelRow": 22,
       "ID": "A-FC08.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
@@ -868,7 +903,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAkwrY0rHZySZdae-RSCVhpAV36kXQS01bvYWhf4UR86ns?e=Nwi2zA"
     },
     {
-      "_excelRow": 22,
+      "_excelRow": 23,
       "ID": "A-FC08.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
@@ -903,7 +938,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBkqkcDbDbcT7iB7btS8sODAevjEQybK3qDAz5F8R7B-dE?e=u52YOh"
     },
     {
-      "_excelRow": 23,
+      "_excelRow": 24,
       "ID": "A-FC09.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
@@ -938,7 +973,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBPv-7PNG4TRa1VyXm07Ro8ATwk7aaSx_Znzh_d2SkRlZI?e=VL5J35"
     },
     {
-      "_excelRow": 24,
+      "_excelRow": 25,
       "ID": "A-FC09.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
@@ -973,7 +1008,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAR8oR9xN6ZRoa7KWIQCtc4AS6hQw4wMd38h1ZPOaE19ss?e=ppsD3h"
     },
     {
-      "_excelRow": 25,
+      "_excelRow": 26,
       "ID": "A-FC09.3",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
@@ -1008,7 +1043,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDtDSttHsg_S6pLDHWqZRKGAciQLO5jlza1qw8jNHsNmUE?e=kEcsJj"
     },
     {
-      "_excelRow": 26,
+      "_excelRow": 27,
       "ID": "A-FC10.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
@@ -1043,7 +1078,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDbZjEspMBHR4oE5tGhoJbBAfAERdfgAzTp7edg28knZTc?e=xVzxAk"
     },
     {
-      "_excelRow": 27,
+      "_excelRow": 28,
       "ID": "A-FC10.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
@@ -1078,7 +1113,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC-QctaRU7-T63dZZgNAknCAdo9OKYEuqUDBdyhq8yyZjk?e=EZaI2B"
     },
     {
-      "_excelRow": 28,
+      "_excelRow": 29,
       "ID": "A-FC10.3",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
@@ -1113,7 +1148,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBfeLWdXXqJTJs8XYFeRfoAAQo-pMKFfjULZpVXl_u5BEc?e=OhMg5A"
     },
     {
-      "_excelRow": 29,
+      "_excelRow": 30,
       "ID": "A-IN03.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1148,7 +1183,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAIiLBlF3XiTq-nFOu8JF3pAavVG45cHlDTrmRoHRxbCgs?e=s8WEPa"
     },
     {
-      "_excelRow": 30,
+      "_excelRow": 31,
       "ID": "A-IN03.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Investigación",
@@ -1183,7 +1218,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAgoT-CyJzgQKWgtDqg7nSaAbJEyZBKm507pDkdw9jrSso?e=Y1lYcl"
     },
     {
-      "_excelRow": 31,
+      "_excelRow": 32,
       "ID": "A-IN04.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
@@ -1218,7 +1253,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDsnAsRrqZeTa5KPoSTpIB1Aat1kSKis6nyAYwyQECNCf8?e=rsOKuU"
     },
     {
-      "_excelRow": 32,
+      "_excelRow": 33,
       "ID": "A-IN04.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1253,7 +1288,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDaKkPtnm22T7-7p2nAS1Z3AYampTSNV569bDPmuwJMGKQ?e=1VivxD"
     },
     {
-      "_excelRow": 33,
+      "_excelRow": 34,
       "ID": "A-IN05.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1288,7 +1323,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAP7tXSL7xWR4unTPIP0L6SAar-BcfMRLg_lAg-oxxfrmo?e=4Usyvi"
     },
     {
-      "_excelRow": 34,
+      "_excelRow": 35,
       "ID": "A-IN05.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Investigación",
@@ -1323,7 +1358,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCYljMH_6o6TZygt3hyKw85Aa3czo23TdSTSXR4j-xnyZY?e=8xLqps"
     },
     {
-      "_excelRow": 35,
+      "_excelRow": 36,
       "ID": "A-IN07.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1358,7 +1393,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAIOEDFXe1JRZrxDGoVwxHRAUd_KKB1nYLnAWoj9tttuqU?e=Bg1do4"
     },
     {
-      "_excelRow": 36,
+      "_excelRow": 37,
       "ID": "A-IN07.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1393,7 +1428,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCTypfqyQufTZb5js7WbzidAZfkrdZ1SY5ET0aqk7zOlyc?e=BthbfN"
     },
     {
-      "_excelRow": 37,
+      "_excelRow": 38,
       "ID": "A-IN08.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1428,7 +1463,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDsVOaF9daIRo1u1uKDE8h1ARuItTtjoSB_7bBpKT5LQ_o?e=5uHifZ"
     },
     {
-      "_excelRow": 38,
+      "_excelRow": 39,
       "ID": "A-IN08.2",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Investigación",
@@ -1463,7 +1498,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBPfNB2dd9NTLvPApkAUqftAYn2VbjOebwdltdmEEZWG38?e=b9cRHO"
     },
     {
-      "_excelRow": 39,
+      "_excelRow": 40,
       "ID": "A-IN09.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
@@ -1498,7 +1533,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC3-EQkU-lVR54JL0pR955IAbgtVprix7v-RV95kXBOHw4?e=ct9qGj"
     },
     {
-      "_excelRow": 40,
+      "_excelRow": 41,
       "ID": "A-IN09.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1533,7 +1568,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgByuAoEAzwVSpAEzdoLcgv5AQTQXyDyRu3pdi3ezigk_jY?e=IchXaD"
     },
     {
-      "_excelRow": 41,
+      "_excelRow": 42,
       "ID": "A-IN10.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
@@ -1568,7 +1603,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDHI5H4Hr0uSKK_gnux6zjXAVl-Ycnddtb775tKIeMP3e8?e=FznNx6"
     },
     {
-      "_excelRow": 42,
+      "_excelRow": 43,
       "ID": "A-IN10.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1603,7 +1638,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDGY3TqDuw8S6wLaozMJ4SKAWgtT7Z_ZWyRdMMeyBlNuqE?e=6194af"
     },
     {
-      "_excelRow": 43,
+      "_excelRow": 44,
       "ID": "A-IN10.3",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Investigación",
@@ -1638,7 +1673,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA9IMJ9thCBQ7J__F9X-ROZAR7XhURTYTwfzu9oj0qTLmc?e=cqL4fI"
     },
     {
-      "_excelRow": 44,
+      "_excelRow": 45,
       "ID": "A-IN11.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
@@ -1673,7 +1708,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBObQC_AMZNSZxg3RF6XtwJAVO2FnSemGr145kyHhKGsuQ?e=L7Wucy"
     },
     {
-      "_excelRow": 45,
+      "_excelRow": 46,
       "ID": "A-IN11.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1708,7 +1743,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDiyFOQ8fPkS7hu725jGPggAYn-ZeBsfONTTlxla7NQpa8?e=mZwOUg"
     },
     {
-      "_excelRow": 46,
+      "_excelRow": 47,
       "ID": "A-IN14.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
@@ -1743,7 +1778,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAsrsmG2TliQ5_ko8t_upJ6AeQaXas7C96PVi4KjL7kLAQ?e=rlaDWm"
     },
     {
-      "_excelRow": 47,
+      "_excelRow": 48,
       "ID": "A-IN14.2",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Investigación",
@@ -1778,7 +1813,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCYnMrV-xEoQ7QSd_K-U08oAYd3lw1QatQRCIEIhCk7RSM?e=SGt0TK"
     },
     {
-      "_excelRow": 48,
+      "_excelRow": 49,
       "ID": "A-IN15.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
@@ -1813,7 +1848,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgD8qb7VV3IzS7wwWmKjKO5PAce2tJmZbhqbrMmFd4ja4Mo?e=SwlPrN"
     },
     {
-      "_excelRow": 49,
+      "_excelRow": 50,
       "ID": "A-IN15.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Investigación",
@@ -1848,7 +1883,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBTmWjm-s0yS5ydkbu0sqWyAe7glEvM7i2S3fsDV4tO_i4?e=aJg98W"
     },
     {
-      "_excelRow": 50,
+      "_excelRow": 51,
       "ID": "A-EI01.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -1883,7 +1918,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDTrxdSyr-iRIra11HjhnrPAS9gEragX2FXWo8aHGifP7U?e=B85HII"
     },
     {
-      "_excelRow": 51,
+      "_excelRow": 52,
       "ID": "A-EI01.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -1918,7 +1953,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBZsryuG4joQp2LplbzGSg-AUtXvqqtXAf5aQA6cTmVKIY?e=jZ7Tao"
     },
     {
-      "_excelRow": 52,
+      "_excelRow": 53,
       "ID": "A-EI02.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -1953,7 +1988,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgB1raKuz2DKQqc22l1F5mHaAcmuOmeVzDT-v5N-VKZ1-i8?e=Sg3cVE"
     },
     {
-      "_excelRow": 53,
+      "_excelRow": 54,
       "ID": "A-EI02.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -1988,7 +2023,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgB6z9XikTacQoLACJRAHrRdARZvz2LY2FcNtowhC6dpH4k?e=ZELMga"
     },
     {
-      "_excelRow": 54,
+      "_excelRow": 55,
       "ID": "A-EI03.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Emprendimiento e Innovación",
@@ -2023,7 +2058,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAH389O5cIkSJEziJcKtB6XAf9T6B54mq9mgKhnU6mm3DU?e=OWKRZP"
     },
     {
-      "_excelRow": 55,
+      "_excelRow": 56,
       "ID": "A-EI03.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2058,7 +2093,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCZAAVsBbCNTpzu0YMmTnmzAWP3mm8lVx990jh2LhsR5yg?e=l1xp3P"
     },
     {
-      "_excelRow": 56,
+      "_excelRow": 57,
       "ID": "A-EI04.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2093,7 +2128,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA8eNKgskNtTJb42LBLMvYfAfMvlYoxth6_vQ_6GUBlnSw?e=OdAnCE"
     },
     {
-      "_excelRow": 57,
+      "_excelRow": 58,
       "ID": "A-EI04.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2128,7 +2163,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAX2p9-Oi9ZToU_4a_LSHxoAW-jeDWNEyqtUblEQoOiS-Q?e=z9fYye"
     },
     {
-      "_excelRow": 58,
+      "_excelRow": 59,
       "ID": "A-EI05.1",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2163,7 +2198,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBdd1YEaGeMTJ8VjKBCKHJgAX13rRQJpKMrnXr7y16SvFA?e=R4TXvL"
     },
     {
-      "_excelRow": 59,
+      "_excelRow": 60,
       "ID": "A-EI06.1",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2198,7 +2233,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC0ltVFHCBSSZ4uFhvW9dP_AYl2tsa1p_nc0bTuHOC6n7k?e=OvT8aN"
     },
     {
-      "_excelRow": 60,
+      "_excelRow": 61,
       "ID": "A-EI07.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2233,7 +2268,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgACAN8uWV_0Q7r2Y0HGp6eFAb1zYYDD4n9LQNheJlP_udY?e=3KrNO5"
     },
     {
-      "_excelRow": 61,
+      "_excelRow": 62,
       "ID": "A-EI07.2",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2268,7 +2303,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBjC5McFzcJSYcK87VyFtl3AVIs4F6E99Lv7biKdtbDW1w?e=TcjvkZ"
     },
     {
-      "_excelRow": 62,
+      "_excelRow": 63,
       "ID": "A-EI08.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2303,7 +2338,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAE75d05deaToadS4qyeWEUASaQ06oKKK1fmT6NQWEQfaY?e=cUae3e"
     },
     {
-      "_excelRow": 63,
+      "_excelRow": 64,
       "ID": "A-EI08.2",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2338,7 +2373,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBbNp5LZq8KSKwuHVlzRWzOAdksJTD-koQJhXOCtkbpRsA?e=1tyXRU"
     },
     {
-      "_excelRow": 64,
+      "_excelRow": 65,
       "ID": "A-EI09.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Emprendimiento e Innovación",
@@ -2373,7 +2408,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA7Tu5d6btNRb10qVEIpxnrAbTKuCCyz0Hp_bDodO1sjPM?e=Sjui0y"
     },
     {
-      "_excelRow": 65,
+      "_excelRow": 66,
       "ID": "A-EI10.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2408,7 +2443,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC1Uk7I1D7UTb0EkaaT5KgRAZj1UdhwwoYazEwTI9iTZiQ?e=gdAnf8"
     },
     {
-      "_excelRow": 66,
+      "_excelRow": 67,
       "ID": "A-EI10.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
@@ -2443,7 +2478,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCP0sosO40-Qa-KJBzW-0UaAZuM-LHh0xZ291rRBazj6CE?e=kWvs8f"
     },
     {
-      "_excelRow": 67,
+      "_excelRow": 68,
       "ID": "A-IT03.1",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
@@ -2478,7 +2513,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBf4are3zD_SZjbmi7uSGq5ARV5N-1hI1j9nG9Ry5AZEvo?e=amSnSM"
     },
     {
-      "_excelRow": 68,
+      "_excelRow": 69,
       "ID": "A-IT04.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -2513,7 +2548,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBAIWZzeiGGSJjOyrmM76RwAcgeCPuudSq8QZm_UFsjQks?e=AfdWOI"
     },
     {
-      "_excelRow": 69,
+      "_excelRow": 70,
       "ID": "A-IT04.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
@@ -2548,7 +2583,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDQfGTEgRUrTI9meIWDJkpsAUvkz2Rfn1TWmH7EOEfXLa4?e=G4g0Uj"
     },
     {
-      "_excelRow": 70,
+      "_excelRow": 71,
       "ID": "A-IT05.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -2583,7 +2618,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDhqeoNBjlmTr4-PinsYpPdAX67zNFeBPynotFn5CP6MGc?e=orXReX"
     },
     {
-      "_excelRow": 71,
+      "_excelRow": 72,
       "ID": "A-IT05.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
@@ -2618,7 +2653,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDRYB2d1-HtQb2KRm5xm-IGAZS_46PH65TdRIpwLxZCmfQ?e=mbdBlH"
     },
     {
-      "_excelRow": 72,
+      "_excelRow": 73,
       "ID": "A-IT07.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -2653,7 +2688,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA6TJbj1q9hS7nEvtLvlanTAecSb0zntqwNbFq7iYIdWq0?e=KFYKFG"
     },
     {
-      "_excelRow": 73,
+      "_excelRow": 74,
       "ID": "A-IT07.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
@@ -2688,7 +2723,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCuqRPRZrg4S6OSpwcnFBRRASV555fGaZOmW2_upcqXI5U?e=BqySq9"
     },
     {
-      "_excelRow": 74,
+      "_excelRow": 75,
       "ID": "A-IT08.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -2723,7 +2758,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBHt2Ch6RhgTJxAIj3-3x2qAcVLoC9256c3lGZLsTdLddQ?e=zX7EkY"
     },
     {
-      "_excelRow": 75,
+      "_excelRow": 76,
       "ID": "A-IT08.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
@@ -2758,7 +2793,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgB-Pfdb2q-aT4_5Cf-lWJ3nAagRvoIiuKe5H0VyJu4ZLLE?e=QmczkV"
     },
     {
-      "_excelRow": 76,
+      "_excelRow": 77,
       "ID": "A-IT09.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -2793,7 +2828,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAA2QjYF5QDSqjmXBmkoZ8qAYhE3roxaGCO1DkbN93QavQ?e=C3qizx"
     },
     {
-      "_excelRow": 77,
+      "_excelRow": 78,
       "ID": "A-IT10.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Internacionalización",
@@ -2828,7 +2863,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC4Oy-rRmddT7uRufs9wkZSAfIBGBbLDAHuCKd-QblEmwE?e=tTg0IH"
     },
     {
-      "_excelRow": 78,
+      "_excelRow": 79,
       "ID": "A-IT10.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -2863,7 +2898,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBJdNtdJPnpSa6dp7GfbupRAVtkQmuKTMHOXD3E8H6FC5Q?e=6oHx1z"
     },
     {
-      "_excelRow": 79,
+      "_excelRow": 80,
       "ID": "A-IT10.3",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
@@ -2898,7 +2933,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBui4N3pvSjTb8Q9fpyITxDAa3kue5rrsrlMUEeWnRCqwM?e=4AqnUN"
     },
     {
-      "_excelRow": 80,
+      "_excelRow": 81,
       "ID": "A-IT12.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -2933,7 +2968,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA02Dt9AniVTIu-aO0gw8PqAZamkh4jt_HLkUKcB1hFyfQ?e=Crog4z"
     },
     {
-      "_excelRow": 81,
+      "_excelRow": 82,
       "ID": "A-IT12.2",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Internacionalización",
@@ -2968,7 +3003,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCw-IkxrGRJTaQUdDXnHp9hAYYW6BQ7PJSXtzaT0UetOgg?e=BoX3yi"
     },
     {
-      "_excelRow": 82,
+      "_excelRow": 83,
       "ID": "A-IT13.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -3003,7 +3038,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAcTBRYAKPvS7XAUW9m4qReAUnrOGQWiJ-7jJu3q0vrHyg?e=HbG6Kh"
     },
     {
-      "_excelRow": 83,
+      "_excelRow": 84,
       "ID": "A-IT13.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
@@ -3038,7 +3073,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDBhgQ0gbs7SYStpvN-hQcYAbwCmXgFEPjJfQbxYnsIAkI?e=khKydh"
     },
     {
-      "_excelRow": 84,
+      "_excelRow": 85,
       "ID": "A-IT14.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Internacionalización",
@@ -3073,7 +3108,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAYk_iYeF0cQZ1qKKMSIczJAdW5by0dexUKP8SL7DPagYc?e=VSJKoY"
     },
     {
-      "_excelRow": 85,
+      "_excelRow": 86,
       "ID": "A-IT14.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
@@ -3108,7 +3143,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDuNPxOlG-KQoY5LAOJFe-PAYFxQcokWTJBwSLOmL9TfYk?e=rYfd36"
     },
     {
-      "_excelRow": 86,
+      "_excelRow": 87,
       "ID": "A-EL02.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3143,7 +3178,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgD4V056luX2RY85ZNpl14ucAQ5nzhP7W9cfrS3SLNetY14?e=HggLP6"
     },
     {
-      "_excelRow": 87,
+      "_excelRow": 88,
       "ID": "A-EL02.2",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3178,7 +3213,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDsZmfTCBryRZe6WmNHi7tuAbmSQHUc2uu5aBWVzOQW8iM?e=3PmR7A"
     },
     {
-      "_excelRow": 88,
+      "_excelRow": 89,
       "ID": "A-EL03.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3213,7 +3248,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCcZ15mkm3GQJqHg--XTTHwAdEdJu0SUGGD4qeqPHSQ87g?e=zE5RwW"
     },
     {
-      "_excelRow": 89,
+      "_excelRow": 90,
       "ID": "A-EL03.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3248,7 +3283,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCVkt6rFtYNRYUFM3XQ3VSdAc7YehKeqqfVd5LuC-es_Ik?e=ResUck"
     },
     {
-      "_excelRow": 90,
+      "_excelRow": 91,
       "ID": "A-EL05.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3283,7 +3318,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAM4RFNq6nmQr_h3UoUJnC0ARAfWMHLJS8apKORieqOZ2Y?e=2YBIWG"
     },
     {
-      "_excelRow": 91,
+      "_excelRow": 92,
       "ID": "A-EL05.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3318,7 +3353,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC96R8Hc25PT4E4QzKbAjJnAenBOoF-hP--Ru_027z02I4?e=OsjfTM"
     },
     {
-      "_excelRow": 92,
+      "_excelRow": 93,
       "ID": "A-EL06.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3353,7 +3388,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC6vUlte5f5TqY-wr0WgML1AeQCecfdR9VPHo-ibAKdFjM?e=FkSXNw"
     },
     {
-      "_excelRow": 93,
+      "_excelRow": 94,
       "ID": "A-EL06.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3388,7 +3423,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAMyoQ9fnpcQom9VP_OWOHFAfooFjz_sX96hYGLgAk7_w0?e=6aoxn1"
     },
     {
-      "_excelRow": 94,
+      "_excelRow": 95,
       "ID": "A-EL07.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3423,7 +3458,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAUjwH6f_ylRpAT8KqhCVcbAXCvUZeNYibbb2sKZmSozE8?e=60P0vP"
     },
     {
-      "_excelRow": 95,
+      "_excelRow": 96,
       "ID": "A-EL07.2",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3458,7 +3493,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBU9_HTLYeGSJ6nz_rQiCAnAblMEE6eUyumKcBuXrR1bvA?e=5czpGW"
     },
     {
-      "_excelRow": 96,
+      "_excelRow": 97,
       "ID": "A-EL10.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3493,7 +3528,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDFCqdmtViCQL9O9GtxsMjEAZtscZ0-wykRSu1grIfzpkY?e=fhmD9Z"
     },
     {
-      "_excelRow": 97,
+      "_excelRow": 98,
       "ID": "A-EL10.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
@@ -3528,7 +3563,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgD3FsXXDBirR6aun0BUSMSqAbA4INxWDMo3mdHKBkF4f4w?e=hAo0tT"
     },
     {
-      "_excelRow": 98,
+      "_excelRow": 99,
       "ID": "A-FT01.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3563,7 +3598,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDPCHsp0x7WQo-NrCWAOvftAf5TrSGvbG9tX45VeVbXjSE?e=VT1gpF"
     },
     {
-      "_excelRow": 99,
+      "_excelRow": 100,
       "ID": "A-FT01.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3598,7 +3633,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCviXj27qw1Sbo0y73ng4JeAeY1T6_57uUzLUhK6015a4w?e=lXhZgv"
     },
     {
-      "_excelRow": 100,
+      "_excelRow": 101,
       "ID": "A-FT02.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3633,7 +3668,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCQ2W88jZUBSLxMZvkrJLBlAYjF58sicN81OOAvYZx9U_A?e=fOOtBc"
     },
     {
-      "_excelRow": 101,
+      "_excelRow": 102,
       "ID": "A-FT02.2",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3668,7 +3703,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBYHsMJyHJyRpYof6QYgCM5AfEuHtzSvLk8QNV-BI-qLGU?e=d9Gtb6"
     },
     {
-      "_excelRow": 102,
+      "_excelRow": 103,
       "ID": "A-FT03.1",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3703,7 +3738,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBQ4F9F7wYARZEMI4CCpqpnATfCaKj4h0JHu_0Y0pzli4I?e=FXERhT"
     },
     {
-      "_excelRow": 103,
+      "_excelRow": 104,
       "ID": "A-FT03.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3738,7 +3773,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgD9o9xAYXETSICVJ-dFCs3IAbXiuLeys9EK8OdjRhDcAro?e=PRlmtV"
     },
     {
-      "_excelRow": 104,
+      "_excelRow": 105,
       "ID": "A-FT04.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3773,7 +3808,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA-IlrHH3rsTrh2giWgOQdgASRTJ56ANP5Ikc6IfOR_rwU?e=ycxmF7"
     },
     {
-      "_excelRow": 105,
+      "_excelRow": 106,
       "ID": "A-FT04.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3808,7 +3843,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCLp5RrJqRdTLhBSGEJvMIXAU5IhZDw_HWrJizhdOHgq6g?e=pLjvhk"
     },
     {
-      "_excelRow": 106,
+      "_excelRow": 107,
       "ID": "A-FT05.1",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3843,7 +3878,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCq2nXgWPHsTKAiiQjMuyKhAV7TCV8JGKTbzuE8Wfpyu44?e=IXcZgo"
     },
     {
-      "_excelRow": 107,
+      "_excelRow": 108,
       "ID": "A-FT06.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3878,7 +3913,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCmTTKu0P1tRbsuSBUohiceAVogUHktke8s0vLxDMp6jrA?e=3OYkY4"
     },
     {
-      "_excelRow": 108,
+      "_excelRow": 109,
       "ID": "A-FT06.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3913,7 +3948,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC4P0934yicTLA2DgZSUhpKAZz0VulxXdzGQGfn0GIFL-U?e=i88Ai9"
     },
     {
-      "_excelRow": 109,
+      "_excelRow": 110,
       "ID": "A-FT07.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3948,7 +3983,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCSB_bP9f9wSZfYAWp7osgoAa4HqtpQyUTGwIg6JiUhbg8?e=3LhbjO"
     },
     {
-      "_excelRow": 110,
+      "_excelRow": 111,
       "ID": "A-FT07.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -3983,7 +4018,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBJ4dBiOmDSQ4lnB2mkYs2UAQwYhrZozQNJ5IjCP4lJSTc?e=txFqL0"
     },
     {
-      "_excelRow": 111,
+      "_excelRow": 112,
       "ID": "A-FT08.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -4018,7 +4053,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCy6g0lTga6S5y16f7KK8ZdARn_fqhLy371KF6clE0qt7I?e=EfKRnX"
     },
     {
-      "_excelRow": 112,
+      "_excelRow": 113,
       "ID": "A-FT08.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -4053,7 +4088,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA4b1BeR5bEQZ7vDpZyU0zkAU3YM-n_NAtv623_VaxYSsA?e=23j0bY"
     },
     {
-      "_excelRow": 113,
+      "_excelRow": 114,
       "ID": "A-FT09.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -4088,7 +4123,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCtbakflb03S4IAusCaE7aYASZZRyfnft7_-Nu5DqhV4HA?e=dh5w01"
     },
     {
-      "_excelRow": 114,
+      "_excelRow": 115,
       "ID": "A-FT09.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -4123,7 +4158,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBnVZEeb0g8RKgCjv1evT-5Af1EQ5U5eElNJG9S8R0UTe8?e=9fJ2LL"
     },
     {
-      "_excelRow": 115,
+      "_excelRow": 116,
       "ID": "A-FT10.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -4158,7 +4193,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBGOzxoLhzlQISKghEfUCO2AcydJwSkBrbjRlEYMQz8bjE?e=jfrCs6"
     },
     {
-      "_excelRow": 116,
+      "_excelRow": 117,
       "ID": "A-FT11.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -4193,7 +4228,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDteVYE1-RYS50zOqH47fyaAS2Jk-I382SFT-2VrOKkrZk?e=tgsdXL"
     },
     {
-      "_excelRow": 117,
+      "_excelRow": 118,
       "ID": "A-FT11.2",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -4228,7 +4263,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC-gu-4yjlWTZ3y8VS1NPcDAXewaFZHnqiWjCAABy_ZxM4?e=ZcRjY3"
     },
     {
-      "_excelRow": 118,
+      "_excelRow": 119,
       "ID": "A-FT12.1",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
@@ -4263,7 +4298,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC2y5QlMcIbRL6q0uFWvlKjAUWO5CqMjuqrV9U6Na2VblE?e=RRQomB"
     },
     {
-      "_excelRow": 119,
+      "_excelRow": 120,
       "ID": "A-FT12.2",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
