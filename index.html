@@ -277,6 +277,19 @@
     td.number { min-width: 92px; text-align: right; }
     .cell-clamp { display: block; white-space: normal; overflow: visible; overflow-wrap: anywhere; word-break: break-word; }
     .row-actions { display: flex; gap: 5px; }
+    td[data-label="Responsable"] .cell-clamp { white-space: pre-line; }
+    table.grouped td:first-child:not([data-label="ID"]) { position: static; background: #fff; font-weight: 400; color: inherit; }
+    table.grouped td { vertical-align: middle; text-align: center; }
+    table.grouped td.long, table.grouped td[data-label="Actividad"] { text-align: left; }
+    table.grouped td.long { min-width: 300px; text-align: justify; line-height: 1.5; }
+    table.grouped td.long, table.grouped td.long .cell-clamp { hyphens: none; overflow-wrap: normal; word-break: normal; }
+    #view-activities { max-width: none; }
+    #view-activities .table-wrap { max-height: 80vh; }
+    table.grouped td { border-bottom-color: #c3cdd6; border-right: 1px solid #c3cdd6; }
+    table.grouped tr.group-start td { border-top: 1px solid #9aabbb; }
+    table.grouped tr.group-alt td { background-color: #f3f6f9; }
+    table.grouped tbody tr.group-hover td { background-color: #e6f3f1; }
+    table.grouped tbody td.outer-cell, table.grouped tbody tr:hover td.outer-cell { background-color: #eaf0f5; color: var(--navy); font-weight: 800; border-top: 1px solid #9aabbb; }
     .edit-link { padding: 5px 9px; border: 1px solid var(--line-strong); border-radius: 8px; color: var(--navy); background: #fff; font-weight: 700; }
     .pagination { display: flex; gap: 10px; align-items: center; justify-content: space-between; padding: 12px 16px; border-top: 1px solid var(--line); background: #fff; color: var(--muted); font-size: .82rem; }
     .pagination-actions { display: flex; gap: 6px; }
@@ -522,6 +535,7 @@
             <span id="filterSummary" class="card-sub">Sin filtros</span>
             <span class="spacer"></span>
             <button id="newActivityButton" class="primary-btn small-btn" type="button" data-editor-only hidden>Nueva actividad</button>
+            <button id="groupToggle" class="secondary-btn small-btn" type="button" title="Unir o separar las celdas que se repiten en actividades seguidas">Separar celdas</button>
             <button id="exportCsvButton" class="secondary-btn small-btn" type="button" title="Descarga las actividades filtradas y ordenadas, con las columnas visibles">Exportar CSV</button>
             <button id="columnButton" class="secondary-btn small-btn" type="button">29 columnas</button>
           </div>
@@ -602,6 +616,11 @@
       const oauthScopes = "openid profile offline_access User.Read Files.ReadWrite";
       const mobileColumns = new Set(["ID", "Variable", "Indicador", "Actividad", "Responsable", "Fecha de fin", "Prioridad", "Estado", "Avance (%)"]);
       const hiddenColumns = new Set(["Fase", "Organismo", "Enlace evidencias"]);
+      // Celdas unidas: dentro de un mismo indicador, el valor que se repite en actividades seguidas se muestra una sola vez.
+      const GROUP_KEYS = ["Código indicador"];
+      // Estas columnas se unen también entre grupos seguidos; cada una respeta el corte de las anteriores.
+      const outerMergeColumns = ["Variable"];
+      const groupMergeColumns = new Set(["Código indicador", "Indicador", "Descripción Indicador", "Tipo de indicador", "Organismo", "Fórmula de cálculo", "Resultado", "Unidad", "Descripción del hallazgo"]);
       const EVIDENCE_LINK_FIELD = "Enlace evidencias";
       const EVIDENCE_BASE_URL = "https://ucacueedu-my.sharepoint.com/";
       function evidenceUrl(record) {
@@ -637,6 +656,7 @@
         sort: { field: "", dir: "asc" },
         page: 1,
         activeView: "overview",
+        grouped: true,
         visibleColumns: new Set(seed.headers.filter(field => !hiddenColumns.has(field))),
         config: { tenantId: "", clientId: "", shareUrl: "", sheetName: "Plan de Mejoras", adminEmails: [], adminObjectIds: [] },
         graph: { accessToken: "", refreshToken: "", expiresAt: 0, driveId: "", itemId: "", fileName: "", sessionId: "", lastModified: "", accessMode: "unknown", authorizedAdmin: false, user: null },
@@ -1005,6 +1025,63 @@
         const visible = publicHeaders.filter(field => state.visibleColumns.has(field));
         const actionHeader = isEditor() ? `<th scope="col">Acción</th>` : "";
         const header = `<thead><tr>${visible.map(field => `<th scope="col" aria-sort="${state.sort.field === field ? (state.sort.dir === "asc" ? "ascending" : "descending") : "none"}"><button type="button" class="sort-btn" data-sort="${esc(field)}" title="Ordenar por ${esc(field)}">${esc(field)}<span aria-hidden="true">${state.sort.field === field ? (state.sort.dir === "asc" ? " ▲" : " ▼") : ""}</span></button></th>`).join("")}${actionHeader}</tr></thead>`;
+        if (state.grouped && slice.length) {
+          const groups = new Map();
+          for (const record of slice) {
+            const key = GROUP_KEYS.map(field => plain(record[field])).join("|") || record.ID;
+            if (!groups.has(key)) groups.set(key, []);
+            groups.get(key).push(record);
+          }
+          const flat = [...groups.values()].flat();
+          const outerSpans = new Map();
+          outerMergeColumns.forEach((field, level) => {
+            const fields = outerMergeColumns.slice(0, level + 1);
+            const out = new Array(flat.length).fill(0);
+            for (let i = 0; i < flat.length;) {
+              let j = i + 1;
+              while (j < flat.length && fields.every(f => plain(flat[j][f]) === plain(flat[i][f]))) j++;
+              out[i] = j - i;
+              i = j;
+            }
+            outerSpans.set(field, out);
+          });
+          const rows = [];
+          let flatIndex = 0;
+          let groupIndex = 0;
+          for (const records of groups.values()) {
+            const spans = new Map();
+            for (const field of visible.filter(field => groupMergeColumns.has(field))) {
+              const out = new Array(records.length).fill(0);
+              for (let i = 0; i < records.length;) {
+                let j = i + 1;
+                while (j < records.length && plain(records[j][field]) === plain(records[i][field])) j++;
+                out[i] = j - i;
+                i = j;
+              }
+              spans.set(field, out);
+            }
+            records.forEach((record, index) => {
+              const position = flatIndex++;
+              const cells = visible.map(field => {
+                const span = outerSpans.has(field) ? outerSpans.get(field)[position] : spans.has(field) ? spans.get(field)[index] : 1;
+                if (!span) return "";
+                const value = displayCell(record, field);
+                const cls = [longColumns.has(field) ? "long" : mediumColumns.has(field) ? "medium" : numericColumns.has(field) ? "number" : "", mobileColumns.has(field) ? "m-key" : "", span > 1 ? "group-merged" : "", outerSpans.has(field) ? "outer-cell" : ""].filter(Boolean).join(" ");
+                let content = `<span class="cell-clamp" title="${esc(value)}">${esc(value)}</span>`;
+                if (field === "Prioridad") content = `<span class="badge ${norm(value) === "critica" ? "red" : norm(value) === "alta" ? "amber" : ""}">${esc(value)}</span>`;
+                if (field === "Estado") content = `<span class="badge ${activityAdvance(record) >= 100 ? "green" : activityAdvance(record) > 0 ? "amber" : "red"}">${esc(value)}</span>`;
+                if (field === "Semáforo de avance") content = `<span class="badge ${semaphoreClass(value)}">${esc(value)}</span>`;
+                if (field === "Nivel de cumplimiento") content = `<span class="badge ${norm(value) === "cumple" ? "green" : norm(value) === "no cumple" ? "red" : norm(value) === "cumple parcial" ? "amber" : ""}">${esc(value)}</span>`;
+                if (field === "Evidencias" && evidenceUrl(record)) content = `<a class="evidence-link" href="${esc(evidenceUrl(record))}" target="_blank" rel="noopener noreferrer" title="Abrir evidencias en OneDrive">${esc(plain(record.Evidencias) || "Ver evidencias")}</a>`;
+                return `<td class="${cls}" data-label="${esc(field)}"${span > 1 ? ` rowspan="${span}"` : ""}>${content}</td>`;
+              }).join("");
+              const actions = isEditor() ? `<td><div class="row-actions"><button class="edit-link" type="button" data-edit-row="${record._excelRow}">Editar</button><button class="edit-link" type="button" data-duplicate-row="${record._excelRow}" title="Crear una actividad nueva con los datos de esta">Duplicar</button></div></td>` : "";
+              rows.push(`<tr class="${[index === 0 ? "group-start" : "", groupIndex % 2 ? "group-alt" : ""].filter(Boolean).join(" ")}" data-group="${groupIndex}">${cells}${actions}</tr>`);
+            });
+            groupIndex++;
+          }
+          $("#activitiesTable").innerHTML = `<table class="grouped">${header}<tbody>${rows.join("")}</tbody></table>`;
+        }
         const body = slice.length ? `<tbody>${slice.map(record => `<tr>${visible.map(field => {
           const value = displayCell(record, field);
           const cls = [longColumns.has(field) ? "long" : mediumColumns.has(field) ? "medium" : numericColumns.has(field) ? "number" : "", mobileColumns.has(field) ? "m-key" : ""].filter(Boolean).join(" ");
@@ -1016,7 +1093,8 @@
           if (field === "Evidencias" && evidenceUrl(record)) content = `<a class="evidence-link" href="${esc(evidenceUrl(record))}" target="_blank" rel="noopener noreferrer" title="Abrir evidencias en OneDrive">${esc(plain(record.Evidencias) || "Ver evidencias")}</a>`;
           return `<td class="${cls}" data-label="${esc(field)}">${content}</td>`;
         }).join("")}${isEditor() ? `<td><div class="row-actions"><button class="edit-link" type="button" data-edit-row="${record._excelRow}">Editar</button><button class="edit-link" type="button" data-duplicate-row="${record._excelRow}" title="Crear una actividad nueva con los datos de esta">Duplicar</button></div></td>` : ""}</tr>`).join("")}</tbody>` : `<tbody><tr><td colspan="${visible.length + (isEditor() ? 1 : 0)}" class="empty">No existen actividades que coincidan con la búsqueda y los filtros.</td></tr></tbody>`;
-        $("#activitiesTable").innerHTML = `<table>${header}${body}</table>`;
+        if (!(state.grouped && slice.length)) $("#activitiesTable").innerHTML = `<table>${header}${body}</table>`;
+        $("#groupToggle").textContent = state.grouped ? "Separar celdas" : "Unir celdas repetidas";
         $("#activitiesTitle").textContent = isEditor() ? "Consulta y edición de actividades" : "Consulta de actividades";
         $("#activitiesHelp").textContent = isEditor() ? `La búsqueda revisa las ${seed.headers.length} columnas. Selecciona una fila para actualizarla.` : `La búsqueda revisa las ${seed.headers.length} columnas. Tu cuenta tiene acceso de solo lectura.`;
         $("#resultCount").textContent = `${filtered.length} ${filtered.length === 1 ? "actividad" : "actividades"}`;
@@ -1735,6 +1813,11 @@
         $("#syncButton").addEventListener("click", () => syncAll().catch(handleError));
         $("#columnButton").addEventListener("click", openColumns);
         $("#exportCsvButton").addEventListener("click", exportCsv);
+        $("#groupToggle").addEventListener("click", () => { state.grouped = !state.grouped; renderActivities(); });
+        // Al pasar el mouse por una actividad se resalta todo su grupo, incluidas las celdas unidas.
+        const highlightGroup = group => $$("#activitiesTable tr[data-group]").forEach(row => row.classList.toggle("group-hover", row.dataset.group === group));
+        $("#activitiesTable").addEventListener("mouseover", event => { const row = event.target.closest("tr[data-group]"); highlightGroup(row && !event.target.closest(".outer-cell") ? row.dataset.group : null); });
+        $("#activitiesTable").addEventListener("mouseleave", () => highlightGroup(null));
         $("#columnDialog").addEventListener("close", applyColumns);
         $("#showAllColumns").addEventListener("click", () => $$('#columnOptions input').forEach(input => input.checked = true));
         $("#showKeyColumns").addEventListener("click", () => $$('#columnOptions input').forEach(input => input.checked = keyColumns.includes(input.value)));
