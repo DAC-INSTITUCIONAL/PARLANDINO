@@ -3,9 +3,9 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-11-05T19:35:22.768Z",
+    "generatedAt": "2026-11-05T20:28:46.880Z",
     "totalActivities": 119,
-    "totalColumns": 32,
+    "totalColumns": 33,
     "minDate": "2026-10-05",
     "maxDate": "2027-12-17",
     "duplicateIds": [],
@@ -14,6 +14,7 @@
   },
   "headers": [
     "ID",
+    "Objetivo PEDI",
     "Fase",
     "Variable",
     "Código indicador",
@@ -48,6 +49,7 @@
   ],
   "originalHeaders": [
     "ID",
+    "Objetivo PEDI",
     "Fase",
     "Variable",
     "Código indicador",
@@ -170,6 +172,7 @@
     {
       "_excelRow": 2,
       "ID": "G-01",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-01",
@@ -205,6 +208,7 @@
     {
       "_excelRow": 3,
       "ID": "G-02",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-02",
@@ -240,6 +244,7 @@
     {
       "_excelRow": 4,
       "ID": "G-03",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-03",
@@ -275,6 +280,7 @@
     {
       "_excelRow": 5,
       "ID": "G-04",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-04",
@@ -310,6 +316,7 @@
     {
       "_excelRow": 6,
       "ID": "G-05",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-05",
@@ -345,6 +352,7 @@
     {
       "_excelRow": 7,
       "ID": "G-06",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-06",
@@ -380,6 +388,7 @@
     {
       "_excelRow": 8,
       "ID": "G-07",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-07",
@@ -415,6 +424,7 @@
     {
       "_excelRow": 9,
       "ID": "G-08",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-08",
@@ -450,6 +460,7 @@
     {
       "_excelRow": 10,
       "ID": "G-09",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-09",
@@ -485,6 +496,7 @@
     {
       "_excelRow": 11,
       "ID": "G-10",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-10",
@@ -520,6 +532,7 @@
     {
       "_excelRow": 12,
       "ID": "G-11",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-11",
@@ -555,6 +568,7 @@
     {
       "_excelRow": 13,
       "ID": "G-12",
+      "Objetivo PEDI": "No aplica (gestión del proceso de acreditación)",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Gestión del proceso de acreditación",
       "Código indicador": "G-12",
@@ -590,6 +604,7 @@
     {
       "_excelRow": 14,
       "ID": "A-FC04.1",
+      "Objetivo PEDI": "OS-4 Incrementar la efectividad del proceso de enseñanza-aprendizaje",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-04",
@@ -625,6 +640,7 @@
     {
       "_excelRow": 15,
       "ID": "A-FC04.2",
+      "Objetivo PEDI": "OS-4 Incrementar la efectividad del proceso de enseñanza-aprendizaje",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-04",
@@ -660,6 +676,7 @@
     {
       "_excelRow": 16,
       "ID": "A-FC04.3",
+      "Objetivo PEDI": "OS-4 Incrementar la efectividad del proceso de enseñanza-aprendizaje",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-04",
@@ -695,6 +712,7 @@
     {
       "_excelRow": 17,
       "ID": "A-FC05.1",
+      "Objetivo PEDI": "OS-4 Incrementar la efectividad del proceso de enseñanza-aprendizaje",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-05",
@@ -730,6 +748,7 @@
     {
       "_excelRow": 18,
       "ID": "A-FC05.2",
+      "Objetivo PEDI": "OS-4 Incrementar la efectividad del proceso de enseñanza-aprendizaje",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-05",
@@ -765,6 +784,7 @@
     {
       "_excelRow": 19,
       "ID": "A-FC06.1",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-06",
@@ -800,6 +820,7 @@
     {
       "_excelRow": 20,
       "ID": "A-FC06.2",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-06",
@@ -835,6 +856,7 @@
     {
       "_excelRow": 21,
       "ID": "A-FC06.3",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-06",
@@ -870,6 +892,7 @@
     {
       "_excelRow": 22,
       "ID": "A-FC08.1",
+      "Objetivo PEDI": "OS-4 Incrementar la efectividad del proceso de enseñanza-aprendizaje",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-08",
@@ -905,6 +928,7 @@
     {
       "_excelRow": 23,
       "ID": "A-FC08.2",
+      "Objetivo PEDI": "OS-4 Incrementar la efectividad del proceso de enseñanza-aprendizaje",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-08",
@@ -940,6 +964,7 @@
     {
       "_excelRow": 24,
       "ID": "A-FC09.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-09",
@@ -975,6 +1000,7 @@
     {
       "_excelRow": 25,
       "ID": "A-FC09.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-09",
@@ -1010,6 +1036,7 @@
     {
       "_excelRow": 26,
       "ID": "A-FC09.3",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-09",
@@ -1045,6 +1072,7 @@
     {
       "_excelRow": 27,
       "ID": "A-FC10.1",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-10",
@@ -1080,6 +1108,7 @@
     {
       "_excelRow": 28,
       "ID": "A-FC10.2",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-10",
@@ -1115,6 +1144,7 @@
     {
       "_excelRow": 29,
       "ID": "A-FC10.3",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Conocimiento y Formación",
       "Código indicador": "FC-10",
@@ -1150,6 +1180,7 @@
     {
       "_excelRow": 30,
       "ID": "A-IN03.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-03",
@@ -1185,6 +1216,7 @@
     {
       "_excelRow": 31,
       "ID": "A-IN03.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-03",
@@ -1220,6 +1252,7 @@
     {
       "_excelRow": 32,
       "ID": "A-IN04.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
       "Código indicador": "IN-04",
@@ -1255,6 +1288,7 @@
     {
       "_excelRow": 33,
       "ID": "A-IN04.2",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-04",
@@ -1290,6 +1324,7 @@
     {
       "_excelRow": 34,
       "ID": "A-IN05.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-05",
@@ -1325,6 +1360,7 @@
     {
       "_excelRow": 35,
       "ID": "A-IN05.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-05",
@@ -1360,6 +1396,7 @@
     {
       "_excelRow": 36,
       "ID": "A-IN07.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-07",
@@ -1395,6 +1432,7 @@
     {
       "_excelRow": 37,
       "ID": "A-IN07.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-07",
@@ -1430,6 +1468,7 @@
     {
       "_excelRow": 38,
       "ID": "A-IN08.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-08",
@@ -1465,6 +1504,7 @@
     {
       "_excelRow": 39,
       "ID": "A-IN08.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-08",
@@ -1500,6 +1540,7 @@
     {
       "_excelRow": 40,
       "ID": "A-IN09.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
       "Código indicador": "IN-09",
@@ -1535,6 +1576,7 @@
     {
       "_excelRow": 41,
       "ID": "A-IN09.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-09",
@@ -1570,6 +1612,7 @@
     {
       "_excelRow": 42,
       "ID": "A-IN10.1",
+      "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
       "Código indicador": "IN-10",
@@ -1605,6 +1648,7 @@
     {
       "_excelRow": 43,
       "ID": "A-IN10.2",
+      "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-10",
@@ -1640,6 +1684,7 @@
     {
       "_excelRow": 44,
       "ID": "A-IN10.3",
+      "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-10",
@@ -1675,6 +1720,7 @@
     {
       "_excelRow": 45,
       "ID": "A-IN11.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
       "Código indicador": "IN-11",
@@ -1710,6 +1756,7 @@
     {
       "_excelRow": 46,
       "ID": "A-IN11.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-11",
@@ -1745,6 +1792,7 @@
     {
       "_excelRow": 47,
       "ID": "A-IN14.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-14",
@@ -1780,6 +1828,7 @@
     {
       "_excelRow": 48,
       "ID": "A-IN14.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-14",
@@ -1815,6 +1864,7 @@
     {
       "_excelRow": 49,
       "ID": "A-IN15.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Investigación",
       "Código indicador": "IN-15",
@@ -1850,6 +1900,7 @@
     {
       "_excelRow": 50,
       "ID": "A-IN15.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Investigación",
       "Código indicador": "IN-15",
@@ -1885,6 +1936,7 @@
     {
       "_excelRow": 51,
       "ID": "A-EI01.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-01",
@@ -1920,6 +1972,7 @@
     {
       "_excelRow": 52,
       "ID": "A-EI01.2",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-01",
@@ -1955,6 +2008,7 @@
     {
       "_excelRow": 53,
       "ID": "A-EI02.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-02",
@@ -1990,6 +2044,7 @@
     {
       "_excelRow": 54,
       "ID": "A-EI02.2",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-02",
@@ -2025,6 +2080,7 @@
     {
       "_excelRow": 55,
       "ID": "A-EI03.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-03",
@@ -2060,6 +2116,7 @@
     {
       "_excelRow": 56,
       "ID": "A-EI03.2",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-03",
@@ -2095,6 +2152,7 @@
     {
       "_excelRow": 57,
       "ID": "A-EI04.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-04",
@@ -2130,6 +2188,7 @@
     {
       "_excelRow": 58,
       "ID": "A-EI04.2",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-04",
@@ -2165,6 +2224,7 @@
     {
       "_excelRow": 59,
       "ID": "A-EI05.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-05",
@@ -2200,6 +2260,7 @@
     {
       "_excelRow": 60,
       "ID": "A-EI06.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-06",
@@ -2235,6 +2296,7 @@
     {
       "_excelRow": 61,
       "ID": "A-EI07.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-07",
@@ -2270,6 +2332,7 @@
     {
       "_excelRow": 62,
       "ID": "A-EI07.2",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-07",
@@ -2305,6 +2368,7 @@
     {
       "_excelRow": 63,
       "ID": "A-EI08.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-08",
@@ -2340,6 +2404,7 @@
     {
       "_excelRow": 64,
       "ID": "A-EI08.2",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-08",
@@ -2375,6 +2440,7 @@
     {
       "_excelRow": 65,
       "ID": "A-EI09.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-09",
@@ -2410,6 +2476,7 @@
     {
       "_excelRow": 66,
       "ID": "A-EI10.1",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-10",
@@ -2445,6 +2512,7 @@
     {
       "_excelRow": 67,
       "ID": "A-EI10.2",
+      "Objetivo PEDI": "OS-2 Promover soluciones sostenibles e innovadoras a los problemas del territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Emprendimiento e Innovación",
       "Código indicador": "EI-10",
@@ -2480,6 +2548,7 @@
     {
       "_excelRow": 68,
       "ID": "A-IT03.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-03",
@@ -2515,6 +2584,7 @@
     {
       "_excelRow": 69,
       "ID": "A-IT04.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-04",
@@ -2550,6 +2620,7 @@
     {
       "_excelRow": 70,
       "ID": "A-IT04.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-04",
@@ -2585,6 +2656,7 @@
     {
       "_excelRow": 71,
       "ID": "A-IT05.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-05",
@@ -2620,6 +2692,7 @@
     {
       "_excelRow": 72,
       "ID": "A-IT05.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-05",
@@ -2655,6 +2728,7 @@
     {
       "_excelRow": 73,
       "ID": "A-IT07.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-07",
@@ -2690,6 +2764,7 @@
     {
       "_excelRow": 74,
       "ID": "A-IT07.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-07",
@@ -2725,6 +2800,7 @@
     {
       "_excelRow": 75,
       "ID": "A-IT08.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-08",
@@ -2760,6 +2836,7 @@
     {
       "_excelRow": 76,
       "ID": "A-IT08.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-08",
@@ -2795,6 +2872,7 @@
     {
       "_excelRow": 77,
       "ID": "A-IT09.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-09",
@@ -2830,6 +2908,7 @@
     {
       "_excelRow": 78,
       "ID": "A-IT10.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-10",
@@ -2865,6 +2944,7 @@
     {
       "_excelRow": 79,
       "ID": "A-IT10.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-10",
@@ -2900,6 +2980,7 @@
     {
       "_excelRow": 80,
       "ID": "A-IT10.3",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-10",
@@ -2935,6 +3016,7 @@
     {
       "_excelRow": 81,
       "ID": "A-IT12.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-12",
@@ -2970,6 +3052,7 @@
     {
       "_excelRow": 82,
       "ID": "A-IT12.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-12",
@@ -3005,6 +3088,7 @@
     {
       "_excelRow": 83,
       "ID": "A-IT13.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-13",
@@ -3040,6 +3124,7 @@
     {
       "_excelRow": 84,
       "ID": "A-IT13.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-13",
@@ -3075,6 +3160,7 @@
     {
       "_excelRow": 85,
       "ID": "A-IT14.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-14",
@@ -3110,6 +3196,7 @@
     {
       "_excelRow": 86,
       "ID": "A-IT14.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Internacionalización",
       "Código indicador": "IT-14",
@@ -3145,6 +3232,7 @@
     {
       "_excelRow": 87,
       "ID": "A-EL02.1",
+      "Objetivo PEDI": "Transversal (seguimiento de todos los objetivos del PEDI)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-02",
@@ -3180,6 +3268,7 @@
     {
       "_excelRow": 88,
       "ID": "A-EL02.2",
+      "Objetivo PEDI": "Transversal (seguimiento de todos los objetivos del PEDI)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-02",
@@ -3215,6 +3304,7 @@
     {
       "_excelRow": 89,
       "ID": "A-EL03.1",
+      "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-03",
@@ -3250,6 +3340,7 @@
     {
       "_excelRow": 90,
       "ID": "A-EL03.2",
+      "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-03",
@@ -3285,6 +3376,7 @@
     {
       "_excelRow": 91,
       "ID": "A-EL05.1",
+      "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-05",
@@ -3320,6 +3412,7 @@
     {
       "_excelRow": 92,
       "ID": "A-EL05.2",
+      "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-05",
@@ -3355,6 +3448,7 @@
     {
       "_excelRow": 93,
       "ID": "A-EL06.1",
+      "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-06",
@@ -3390,6 +3484,7 @@
     {
       "_excelRow": 94,
       "ID": "A-EL06.2",
+      "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-06",
@@ -3425,6 +3520,7 @@
     {
       "_excelRow": 95,
       "ID": "A-EL07.1",
+      "Objetivo PEDI": "Transversal (seguimiento de todos los objetivos del PEDI)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-07",
@@ -3460,6 +3556,7 @@
     {
       "_excelRow": 96,
       "ID": "A-EL07.2",
+      "Objetivo PEDI": "Transversal (seguimiento de todos los objetivos del PEDI)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-07",
@@ -3495,6 +3592,7 @@
     {
       "_excelRow": 97,
       "ID": "A-EL10.1",
+      "Objetivo PEDI": "OP-2 Optimizar la eficiencia administrativa mediante la digitalización y automatización",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-10",
@@ -3530,6 +3628,7 @@
     {
       "_excelRow": 98,
       "ID": "A-EL10.2",
+      "Objetivo PEDI": "OP-2 Optimizar la eficiencia administrativa mediante la digitalización y automatización",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Estrategia y Liderazgo Institucional",
       "Código indicador": "EL-10",
@@ -3565,6 +3664,7 @@
     {
       "_excelRow": 99,
       "ID": "A-FT01.1",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-01",
@@ -3600,6 +3700,7 @@
     {
       "_excelRow": 100,
       "ID": "A-FT01.2",
+      "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-01",
@@ -3635,6 +3736,7 @@
     {
       "_excelRow": 101,
       "ID": "A-FT02.1",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-02",
@@ -3670,6 +3772,7 @@
     {
       "_excelRow": 102,
       "ID": "A-FT02.2",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-02",
@@ -3705,6 +3808,7 @@
     {
       "_excelRow": 103,
       "ID": "A-FT03.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-03",
@@ -3740,6 +3844,7 @@
     {
       "_excelRow": 104,
       "ID": "A-FT03.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-03",
@@ -3775,6 +3880,7 @@
     {
       "_excelRow": 105,
       "ID": "A-FT04.1",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-04",
@@ -3810,6 +3916,7 @@
     {
       "_excelRow": 106,
       "ID": "A-FT04.2",
+      "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-04",
@@ -3845,6 +3952,7 @@
     {
       "_excelRow": 107,
       "ID": "A-FT05.1",
+      "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-05",
@@ -3880,6 +3988,7 @@
     {
       "_excelRow": 108,
       "ID": "A-FT06.1",
+      "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-06",
@@ -3915,6 +4024,7 @@
     {
       "_excelRow": 109,
       "ID": "A-FT06.2",
+      "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-06",
@@ -3950,6 +4060,7 @@
     {
       "_excelRow": 110,
       "ID": "A-FT07.1",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-07",
@@ -3985,6 +4096,7 @@
     {
       "_excelRow": 111,
       "ID": "A-FT07.2",
+      "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-07",
@@ -4020,6 +4132,7 @@
     {
       "_excelRow": 112,
       "ID": "A-FT08.1",
+      "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-08",
@@ -4055,6 +4168,7 @@
     {
       "_excelRow": 113,
       "ID": "A-FT08.2",
+      "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-08",
@@ -4090,6 +4204,7 @@
     {
       "_excelRow": 114,
       "ID": "A-FT09.1",
+      "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-09",
@@ -4125,6 +4240,7 @@
     {
       "_excelRow": 115,
       "ID": "A-FT09.2",
+      "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-09",
@@ -4160,6 +4276,7 @@
     {
       "_excelRow": 116,
       "ID": "A-FT10.1",
+      "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-10",
@@ -4195,6 +4312,7 @@
     {
       "_excelRow": 117,
       "ID": "A-FT11.1",
+      "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-11",
@@ -4230,6 +4348,7 @@
     {
       "_excelRow": 118,
       "ID": "A-FT11.2",
+      "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-11",
@@ -4265,6 +4384,7 @@
     {
       "_excelRow": 119,
       "ID": "A-FT12.1",
+      "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-12",
@@ -4300,6 +4420,7 @@
     {
       "_excelRow": 120,
       "ID": "A-FT12.2",
+      "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
       "Variable": "Factores Transversales de Contexto Andino",
       "Código indicador": "FT-12",
