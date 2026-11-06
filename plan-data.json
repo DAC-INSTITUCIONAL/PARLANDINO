@@ -3,8 +3,8 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-11-06T20:13:00.990Z",
-    "totalActivities": 119,
+    "generatedAt": "2026-11-06T20:27:21.808Z",
+    "totalActivities": 120,
     "totalColumns": 33,
     "minDate": "2026-10-05",
     "maxDate": "2027-12-17",
@@ -3375,6 +3375,42 @@
     },
     {
       "_excelRow": 91,
+      "ID": "A-EL03.3",
+      "Objetivo PEDI": "",
+      "Fase": "",
+      "Variable": "",
+      "Código indicador": "",
+      "Indicador": "",
+      "Descripción Indicador": "",
+      "Tipo de indicador": "",
+      "Organismo": "",
+      "Fórmula de cálculo": "",
+      "Resultado": "0",
+      "Unidad": "No aplica",
+      "Tipo de actividad": "",
+      "Descripción del hallazgo": "",
+      "Actividad": "",
+      "Descripción de la actividad": "",
+      "Medida de mitigación": "",
+      "Responsable": "",
+      "Fecha de inicio": null,
+      "Fecha de fin": null,
+      "Plazo (días hábiles)": "",
+      "Producto / Entregable": "",
+      "Medio de verificación": "",
+      "Criterio de aceptación (evidencia de cumplimiento)": "",
+      "Prioridad": "",
+      "Estado": "",
+      "Avance (%)": 0,
+      "Avance esperado (%)": "",
+      "Semáforo de avance": "",
+      "Evidencias": "",
+      "Nivel de cumplimiento": "",
+      "Observaciones": "",
+      "Enlace evidencias": ""
+    },
+    {
+      "_excelRow": 92,
       "ID": "A-EL05.1",
       "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -3410,7 +3446,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAM4RFNq6nmQr_h3UoUJnC0ARAfWMHLJS8apKORieqOZ2Y?e=2YBIWG"
     },
     {
-      "_excelRow": 92,
+      "_excelRow": 93,
       "ID": "A-EL05.2",
       "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -3446,7 +3482,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC96R8Hc25PT4E4QzKbAjJnAenBOoF-hP--Ru_027z02I4?e=OsjfTM"
     },
     {
-      "_excelRow": 93,
+      "_excelRow": 94,
       "ID": "A-EL06.1",
       "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -3482,7 +3518,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC6vUlte5f5TqY-wr0WgML1AeQCecfdR9VPHo-ibAKdFjM?e=FkSXNw"
     },
     {
-      "_excelRow": 94,
+      "_excelRow": 95,
       "ID": "A-EL06.2",
       "Objetivo PEDI": "OTH-1 Fortalecer la atracción y retención de talentos",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -3518,7 +3554,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAMyoQ9fnpcQom9VP_OWOHFAfooFjz_sX96hYGLgAk7_w0?e=6aoxn1"
     },
     {
-      "_excelRow": 95,
+      "_excelRow": 96,
       "ID": "A-EL07.1",
       "Objetivo PEDI": "Transversal (seguimiento de todos los objetivos del PEDI)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -3554,7 +3590,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgAUjwH6f_ylRpAT8KqhCVcbAXCvUZeNYibbb2sKZmSozE8?e=60P0vP"
     },
     {
-      "_excelRow": 96,
+      "_excelRow": 97,
       "ID": "A-EL07.2",
       "Objetivo PEDI": "Transversal (seguimiento de todos los objetivos del PEDI)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
@@ -3590,7 +3626,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBU9_HTLYeGSJ6nz_rQiCAnAblMEE6eUyumKcBuXrR1bvA?e=5czpGW"
     },
     {
-      "_excelRow": 97,
+      "_excelRow": 98,
       "ID": "A-EL10.1",
       "Objetivo PEDI": "OP-2 Optimizar la eficiencia administrativa mediante la digitalización y automatización",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -3626,7 +3662,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDFCqdmtViCQL9O9GtxsMjEAZtscZ0-wykRSu1grIfzpkY?e=fhmD9Z"
     },
     {
-      "_excelRow": 98,
+      "_excelRow": 99,
       "ID": "A-EL10.2",
       "Objetivo PEDI": "OP-2 Optimizar la eficiencia administrativa mediante la digitalización y automatización",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -3662,7 +3698,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgD3FsXXDBirR6aun0BUSMSqAbA4INxWDMo3mdHKBkF4f4w?e=hAo0tT"
     },
     {
-      "_excelRow": 99,
+      "_excelRow": 100,
       "ID": "A-FT01.1",
       "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
@@ -3698,7 +3734,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDPCHsp0x7WQo-NrCWAOvftAf5TrSGvbG9tX45VeVbXjSE?e=VT1gpF"
     },
     {
-      "_excelRow": 100,
+      "_excelRow": 101,
       "ID": "A-FT01.2",
       "Objetivo PEDI": "OP-1 Incrementar la presencia internacional de la universidad",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -3734,7 +3770,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCviXj27qw1Sbo0y73ng4JeAeY1T6_57uUzLUhK6015a4w?e=lXhZgv"
     },
     {
-      "_excelRow": 101,
+      "_excelRow": 102,
       "ID": "A-FT02.1",
       "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
@@ -3770,7 +3806,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCQ2W88jZUBSLxMZvkrJLBlAYjF58sicN81OOAvYZx9U_A?e=fOOtBc"
     },
     {
-      "_excelRow": 102,
+      "_excelRow": 103,
       "ID": "A-FT02.2",
       "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -3806,7 +3842,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBYHsMJyHJyRpYof6QYgCM5AfEuHtzSvLk8QNV-BI-qLGU?e=d9Gtb6"
     },
     {
-      "_excelRow": 103,
+      "_excelRow": 104,
       "ID": "A-FT03.1",
       "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F0. Diagnóstico y arranque (oct – nov 2026)",
@@ -3842,7 +3878,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBQ4F9F7wYARZEMI4CCpqpnATfCaKj4h0JHu_0Y0pzli4I?e=FXERhT"
     },
     {
-      "_excelRow": 104,
+      "_excelRow": 105,
       "ID": "A-FT03.2",
       "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -3878,7 +3914,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgD9o9xAYXETSICVJ-dFCs3IAbXiuLeys9EK8OdjRhDcAro?e=PRlmtV"
     },
     {
-      "_excelRow": 105,
+      "_excelRow": 106,
       "ID": "A-FT04.1",
       "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -3914,7 +3950,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA-IlrHH3rsTrh2giWgOQdgASRTJ56ANP5Ikc6IfOR_rwU?e=ycxmF7"
     },
     {
-      "_excelRow": 106,
+      "_excelRow": 107,
       "ID": "A-FT04.2",
       "Objetivo PEDI": "OS-1 Generar conocimiento para solucionar problemas y comprender el territorio",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -3950,7 +3986,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCLp5RrJqRdTLhBSGEJvMIXAU5IhZDw_HWrJizhdOHgq6g?e=pLjvhk"
     },
     {
-      "_excelRow": 107,
+      "_excelRow": 108,
       "ID": "A-FT05.1",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -3986,7 +4022,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCq2nXgWPHsTKAiiQjMuyKhAV7TCV8JGKTbzuE8Wfpyu44?e=IXcZgo"
     },
     {
-      "_excelRow": 108,
+      "_excelRow": 109,
       "ID": "A-FT06.1",
       "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4022,7 +4058,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCmTTKu0P1tRbsuSBUohiceAVogUHktke8s0vLxDMp6jrA?e=3OYkY4"
     },
     {
-      "_excelRow": 109,
+      "_excelRow": 110,
       "ID": "A-FT06.2",
       "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4058,7 +4094,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC4P0934yicTLA2DgZSUhpKAZz0VulxXdzGQGfn0GIFL-U?e=i88Ai9"
     },
     {
-      "_excelRow": 110,
+      "_excelRow": 111,
       "ID": "A-FT07.1",
       "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4094,7 +4130,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCSB_bP9f9wSZfYAWp7osgoAa4HqtpQyUTGwIg6JiUhbg8?e=3LhbjO"
     },
     {
-      "_excelRow": 111,
+      "_excelRow": 112,
       "ID": "A-FT07.2",
       "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4130,7 +4166,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBJ4dBiOmDSQ4lnB2mkYs2UAQwYhrZozQNJ5IjCP4lJSTc?e=txFqL0"
     },
     {
-      "_excelRow": 112,
+      "_excelRow": 113,
       "ID": "A-FT08.1",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4166,7 +4202,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCy6g0lTga6S5y16f7KK8ZdARn_fqhLy371KF6clE0qt7I?e=EfKRnX"
     },
     {
-      "_excelRow": 113,
+      "_excelRow": 114,
       "ID": "A-FT08.2",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4202,7 +4238,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA4b1BeR5bEQZ7vDpZyU0zkAU3YM-n_NAtv623_VaxYSsA?e=23j0bY"
     },
     {
-      "_excelRow": 114,
+      "_excelRow": 115,
       "ID": "A-FT09.1",
       "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4238,7 +4274,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCtbakflb03S4IAusCaE7aYASZZRyfnft7_-Nu5DqhV4HA?e=dh5w01"
     },
     {
-      "_excelRow": 115,
+      "_excelRow": 116,
       "ID": "A-FT09.2",
       "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4274,7 +4310,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBnVZEeb0g8RKgCjv1evT-5Af1EQ5U5eElNJG9S8R0UTe8?e=9fJ2LL"
     },
     {
-      "_excelRow": 116,
+      "_excelRow": 117,
       "ID": "A-FT10.1",
       "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4310,7 +4346,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBGOzxoLhzlQISKghEfUCO2AcydJwSkBrbjRlEYMQz8bjE?e=jfrCs6"
     },
     {
-      "_excelRow": 117,
+      "_excelRow": 118,
       "ID": "A-FT11.1",
       "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4346,7 +4382,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDteVYE1-RYS50zOqH47fyaAS2Jk-I382SFT-2VrOKkrZk?e=tgsdXL"
     },
     {
-      "_excelRow": 118,
+      "_excelRow": 119,
       "ID": "A-FT11.2",
       "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4382,7 +4418,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC-gu-4yjlWTZ3y8VS1NPcDAXewaFZHnqiWjCAABy_ZxM4?e=ZcRjY3"
     },
     {
-      "_excelRow": 119,
+      "_excelRow": 120,
       "ID": "A-FT12.1",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4418,7 +4454,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC2y5QlMcIbRL6q0uFWvlKjAUWO5CqMjuqrV9U6Na2VblE?e=RRQomB"
     },
     {
-      "_excelRow": 120,
+      "_excelRow": 121,
       "ID": "A-FT12.2",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
