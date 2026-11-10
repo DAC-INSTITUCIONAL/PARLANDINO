@@ -293,7 +293,7 @@
     .sort-btn { all: unset; cursor: pointer; display: inline; color: inherit; font: inherit; }
     .sort-btn:hover, .sort-btn:focus-visible { text-decoration: underline; }
     .alert-item[data-deadline] { cursor: pointer; }
-    th { position: sticky; z-index: 5; top: 0; color: #fff; background: var(--navy); text-align: left; font-size: .76rem; line-height: 1.25; }
+    th { position: sticky; z-index: 5; top: 0; color: #fff; background: var(--navy); text-align: center; vertical-align: middle; font-size: .76rem; line-height: 1.25; }
     th:first-child, td:first-child { position: sticky; left: 0; z-index: 4; min-width: 82px; }
     th:first-child { z-index: 7; background: var(--navy-deep); }
     td:first-child { background: #f7fafb; font-weight: 800; color: var(--navy); }
@@ -302,14 +302,31 @@
     td.long { min-width: 250px; }
     td.medium { min-width: 160px; }
     td.number { min-width: 92px; text-align: right; }
+    td[data-label="Variable"] { min-width: 0; width: 150px; max-width: 150px; }
+    td[data-label="Indicador"] { min-width: 0; width: 210px; max-width: 210px; }
+    td[data-label="Código indicador"], td[data-label="Tipo de indicador"], td[data-label="Resultado"], td[data-label="Unidad"] { min-width: 0; width: 1px; }
+    th:has(> [data-sort="Código indicador"]), th:has(> [data-sort="Tipo de indicador"]), th:has(> [data-sort="Resultado"]), th:has(> [data-sort="Unidad"]) { white-space: nowrap; }
+    td[data-label="Responsable"] { min-width: 0; width: 233px; max-width: 233px; }
+    td[data-label="Descripción del hallazgo"], table.grouped td[data-label="Descripción del hallazgo"] { min-width: 0; width: 294px; max-width: 294px; }
+    td[data-label="Producto / Entregable"], table.grouped td[data-label="Producto / Entregable"] { min-width: 0; width: 252px; max-width: 252px; }
+    td[data-label="Medio de verificación"], table.grouped td[data-label="Medio de verificación"] { min-width: 0; width: 252px; max-width: 252px; }
+    td[data-label="Criterio de aceptación (evidencia de cumplimiento)"], table.grouped td[data-label="Criterio de aceptación (evidencia de cumplimiento)"] { min-width: 0; width: 252px; max-width: 252px; }
+    td[data-label="Actividad"], table.grouped td[data-label="Actividad"] { min-width: 0; width: 294px; max-width: 294px; }
+    td[data-label="Descripción de la actividad"], table.grouped td[data-label="Descripción de la actividad"] { min-width: 0; width: 315px; max-width: 315px; }
+    td[data-label="Medida de mitigación"], table.grouped td[data-label="Medida de mitigación"] { min-width: 0; width: 315px; max-width: 315px; }
+    td[data-label="Descripción Indicador"], table.grouped td[data-label="Descripción Indicador"] { min-width: 0; width: 315px; max-width: 315px; }
+    td[data-label="Fórmula de cálculo"], table.grouped td[data-label="Fórmula de cálculo"] { min-width: 0; width: 252px; max-width: 252px; }
     .cell-clamp { display: block; white-space: normal; overflow: visible; overflow-wrap: anywhere; word-break: break-word; }
     .row-actions { display: flex; gap: 5px; }
     td[data-label="Responsable"] .cell-clamp { white-space: pre-line; }
+    .resp-item { display: block; }
+    .resp-item + .resp-item { margin-top: 4px; padding-top: 4px; border-top: 1px dashed var(--line-strong); }
     table.grouped td:first-child:not([data-label="ID"]) { position: static; background: #fff; font-weight: 400; color: inherit; }
     table.grouped td { vertical-align: middle; text-align: center; }
     table.grouped td.long, table.grouped td[data-label="Actividad"] { text-align: left; }
     table.grouped td.long { min-width: 300px; text-align: left; line-height: 1.5; }
     table.grouped td.long, table.grouped td.long .cell-clamp { hyphens: none; overflow-wrap: normal; word-break: normal; }
+    td.long, table.grouped td.long { text-align: justify; }
     #view-activities { max-width: none; }
     #view-activities .table-wrap { max-height: 80vh; }
     table.grouped td { border-bottom-color: var(--line-table); border-right: 1px solid var(--line-table); }
@@ -1127,6 +1144,7 @@
                 const value = displayCell(record, field);
                 const cls = [longColumns.has(field) ? "long" : mediumColumns.has(field) ? "medium" : numericColumns.has(field) ? "number" : "", mobileColumns.has(field) ? "m-key" : "", span > 1 ? "group-merged" : "", outerSpans.has(field) ? "outer-cell" : ""].filter(Boolean).join(" ");
                 let content = `<span class="cell-clamp" title="${esc(value)}">${esc(value)}</span>`;
+                if (field === "Responsable" && String(value).includes("\n")) content = `<span class="cell-clamp" title="${esc(value)}">${String(value).split("\n").filter(s => s.trim()).map(s => `<span class="resp-item">${esc(s)}</span>`).join("")}</span>`;
                 if (field === "Prioridad") content = `<span class="badge ${norm(value) === "critica" ? "red" : norm(value) === "alta" ? "amber" : ""}">${esc(value)}</span>`;
                 if (field === "Estado") content = `<span class="badge ${activityAdvance(record) >= 100 ? "green" : activityAdvance(record) > 0 ? "amber" : "red"}">${esc(value)}</span>`;
                 if (field === "Semáforo de avance") content = `<span class="badge ${semaphoreClass(value)}">${esc(value)}</span>`;
@@ -1145,6 +1163,7 @@
           const value = displayCell(record, field);
           const cls = [longColumns.has(field) ? "long" : mediumColumns.has(field) ? "medium" : numericColumns.has(field) ? "number" : "", mobileColumns.has(field) ? "m-key" : ""].filter(Boolean).join(" ");
           let content = `<span class="cell-clamp" title="${esc(value)}">${esc(value)}</span>`;
+          if (field === "Responsable" && String(value).includes("\n")) content = `<span class="cell-clamp" title="${esc(value)}">${String(value).split("\n").filter(s => s.trim()).map(s => `<span class="resp-item">${esc(s)}</span>`).join("")}</span>`;
           if (field === "Prioridad") content = `<span class="badge ${norm(value) === "critica" ? "red" : norm(value) === "alta" ? "amber" : ""}">${esc(value)}</span>`;
           if (field === "Estado") content = `<span class="badge ${activityAdvance(record) >= 100 ? "green" : activityAdvance(record) > 0 ? "amber" : "red"}">${esc(value)}</span>`;
           if (field === "Semáforo de avance") content = `<span class="badge ${semaphoreClass(value)}">${esc(value)}</span>`;
