@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Seguimiento del Plan de Mejoras para la Acreditación Andina.">
+  <meta name="description" content="Seguimiento del Plan de Mejoras para la Acreditación con el Parlamento Andino.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <title>Plan de Mejoras para la Acreditación Andina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <title>Plan de Mejoras para la Acreditación con el Parlamento Andino</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23082b4c'/%3E%3Cpath d='M17 17h30v8H17zm0 13h20v8H17zm0 13h14v8H17z' fill='%23fff'/%3E%3Ccircle cx='47' cy='46' r='9' fill='%2300a6a6'/%3E%3Cpath d='m43 46 3 3 6-7' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -49,6 +49,7 @@
       --focus: #0b5cad;
       --focus-on-dark: #ffd15c;
       --target: 44px;
+      --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
     }
 
     * { box-sizing: border-box; }
@@ -105,7 +106,7 @@
     }
     .brand-logo { display: block; height: 42px; width: auto; flex: 0 0 auto; }
     .brand-title { overflow: hidden; }
-    .brand-title strong { display: block; font-size: .98rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .brand-title strong { display: block; font-size: .98rem; line-height: 1.25; text-wrap: balance; }
     .brand-title span { display: block; color: rgba(255,255,255,.7); font-size: .78rem; }
     .search-wrap { position: relative; }
     .search-wrap svg { position: absolute; left: 14px; top: 50%; width: 18px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
@@ -182,14 +183,14 @@
     @keyframes reveal { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
     .section-head { display: flex; justify-content: space-between; gap: 20px; align-items: flex-end; margin: 0 0 26px; }
     .section-head h1, .section-head h2 { margin: 0; color: var(--navy); letter-spacing: -.025em; }
-    .section-head h1 { font-size: clamp(1.45rem, 2.3vw, 2rem); }
+    .section-head h1 { font-family: var(--font-display); font-size: clamp(1.55rem, 2.5vw, 2.2rem); font-weight: 700; letter-spacing: -.015em; }
     .section-head h2 { font-size: 1.25rem; }
     .section-head p { max-width: 820px; margin: 5px 0 0; color: var(--muted); }
     .as-of { color: var(--muted); font-size: .82rem; white-space: nowrap; }
 
     .kpi-grid {
       display: grid;
-      grid-template-columns: 1.5fr repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 1px;
       margin-bottom: 32px;
       border-top: 2px solid var(--navy);
@@ -200,7 +201,6 @@
     .kpi:first-child { padding-left: 0; }
     .kpi-label { color: var(--muted); font-size: .84rem; font-weight: 600; }
     .kpi-value { color: var(--navy); font-size: 1.9rem; line-height: 1; font-weight: 800; letter-spacing: -.03em; }
-    .kpi:first-child .kpi-value { font-size: 3rem; color: var(--teal-ink); }
     .kpi.red .kpi-value { color: var(--red); }
     .kpi-note { color: var(--muted); font-size: .78rem; }
 
@@ -217,6 +217,23 @@
     .card h2, .card h3 { margin: 0; color: var(--navy); font-size: 1rem; }
     .card-sub { margin-top: 3px; color: var(--muted); font-size: .8rem; }
 
+    .dashboard-grid .card, .stats-grid .card { padding: 14px 0 0; border: 0; border-top: 2px solid var(--navy); border-radius: 0; background: transparent; box-shadow: none; }
+    .dashboard-grid .bar-track, .stats-grid .bar-track, .stats-grid .segment-bar { background: var(--line); }
+    .progress-overview { display: grid; grid-template-columns: 180px 1fr; gap: 22px; align-items: center; }
+    .progress-ring {
+      --value: 0deg;
+      position: relative;
+      display: grid;
+      width: 154px;
+      height: 154px;
+      margin: auto;
+      place-items: center;
+      border-radius: 50%;
+      background: conic-gradient(var(--teal) var(--value), var(--line) 0);
+    }
+    .progress-ring::before { content: ""; position: absolute; inset: 15px; border-radius: 50%; background: var(--canvas); }
+    .progress-ring strong { position: relative; z-index: 1; margin-top: -10px; color: var(--navy); font-size: 2rem; letter-spacing: -.05em; }
+    .progress-ring span { position: absolute; z-index: 1; bottom: 43px; color: var(--muted); font-size: .72rem; }
     .status-list { display: grid; gap: 11px; }
     .status-row { display: grid; grid-template-columns: minmax(112px, 1fr) 2.2fr 44px; gap: 10px; align-items: center; font-size: .84rem; }
     .bar-track { height: 9px; overflow: hidden; border-radius: 999px; background: #e8eef2; }
@@ -304,11 +321,16 @@
     .pagination { display: flex; gap: 10px; align-items: center; justify-content: space-between; padding: 12px 16px; border-top: 1px solid var(--line); background: #fff; color: var(--muted); font-size: .82rem; }
     .pagination-actions { display: flex; gap: 6px; }
 
-    .badge { display: inline-flex; align-items: center; min-height: 25px; padding: 3px 8px; border-radius: 999px; color: var(--navy); background: var(--blue-soft); font-size: .72rem; font-weight: 800; white-space: nowrap; }
-    .badge.red { color: var(--red-ink); background: var(--red-soft); }
-    .badge.amber { color: var(--amber-ink); background: var(--amber-soft); }
-    .badge.green { color: var(--green-ink); background: var(--green-soft); }
-    .badge.teal { color: var(--teal-ink); background: var(--teal-soft); }
+    .badge { display: inline-flex; align-items: center; gap: 6px; color: var(--navy); font-size: .76rem; font-weight: 800; white-space: nowrap; }
+    .badge::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: #8fa1af; }
+    .badge.red { color: var(--red-ink); }
+    .badge.red::before { background: var(--red); }
+    .badge.amber { color: var(--amber-ink); }
+    .badge.amber::before { background: var(--amber); }
+    .badge.green { color: var(--green-ink); }
+    .badge.green::before { background: var(--green); }
+    .badge.teal { color: var(--teal-ink); }
+    .badge.teal::before { background: var(--teal); }
 
     .indicator-grid { display: grid; gap: 0; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
     .indicator-card { display: grid; grid-template-columns: minmax(260px, 1.4fr) 100px 90px 90px 210px auto; gap: 14px; align-items: center; padding: 16px 20px; border-top: 1px solid var(--line); }
@@ -335,7 +357,7 @@
     .swatch { width: 10px; height: 10px; border-radius: 3px; }
     .pie-card-body { display: grid; grid-template-columns: minmax(150px, 180px) 1fr; gap: 22px; align-items: center; }
     .pie-chart { position: relative; width: 170px; aspect-ratio: 1; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(8,43,76,.08); }
-    .pie-chart::after { content: ""; position: absolute; inset: 35px; border-radius: 50%; background: var(--paper); box-shadow: 0 0 0 1px rgba(8,43,76,.05); }
+    .pie-chart::after { content: ""; position: absolute; inset: 35px; border-radius: 50%; background: var(--canvas); box-shadow: 0 0 0 1px rgba(8,43,76,.05); }
     .pie-chart-center { position: absolute; z-index: 1; inset: 0; display: grid; place-content: center; text-align: center; color: var(--navy); font-size: 1.2rem; font-weight: 900; line-height: 1.1; }
     .pie-chart-center span { display: block; margin-top: 3px; color: var(--muted); font-size: .7rem; font-weight: 700; }
     .pie-legend { display: grid; gap: 11px; }
@@ -416,6 +438,7 @@
     @media (max-width: 1180px) {
       .topbar { grid-template-columns: minmax(220px, .8fr) minmax(260px, 1.4fr) auto; }
       .kpi-grid { grid-template-columns: repeat(3, minmax(150px,1fr)); }
+      .kpi:nth-child(3n+1) { padding-left: 0; }
       .indicator-card { grid-template-columns: minmax(220px, 1.4fr) 90px 90px 190px auto; }
       .indicator-card .mini-stat:nth-of-type(4) { display: none; }
     }
@@ -449,9 +472,10 @@
       .section-head { align-items: flex-start; flex-direction: column; gap: 6px; }
       .kpi-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
       .kpi { padding: 12px 14px; }
-      .kpi:first-child { padding-left: 14px; }
+      .kpi:nth-child(n) { padding-left: 14px; }
       .kpi-value { font-size: 1.5rem; }
       .pie-card-body { grid-template-columns: 1fr; justify-items: center; }
+      .progress-overview { grid-template-columns: 1fr; }
       .pie-legend { width: 100%; }
       .filters, .form-grid { grid-template-columns: 1fr; }
       .field.full { grid-column: auto; }
@@ -459,6 +483,7 @@
       .indicator-card > .badge { justify-self: start; }
       .status-strip { flex-wrap: wrap; row-gap: 4px; }
       .status-strip strong { white-space: nowrap; }
+      .author { margin-left: 0; padding-left: 0; border-left: 0; }
       .indicator-card .mini-stat { display: none; }
       .quality-item { grid-template-columns: 1fr; }
       .chart-row { grid-template-columns: minmax(115px, 1fr) 1.4fr 42px; }
@@ -472,7 +497,7 @@
       <div class="brand">
         <img class="brand-logo" src="logo-ucacue.png" alt="Universidad Católica de Cuenca" width="124" height="42">
         <div class="brand-title">
-          <strong>Plan de Mejoras para la Acreditación Andina</strong>
+          <strong>Plan de Mejoras para la Acreditación con el Parlamento Andino</strong>
           <span>Seguimiento operativo y cumplimiento</span>
         </div>
       </div>
@@ -523,7 +548,7 @@
                 <div><h2>Avance operativo</h2><div id="progressSubtitle" class="card-sub">Distribución de las actividades según su porcentaje registrado</div></div>
                 <span class="badge teal">Promedio simple</span>
               </div>
-              <div id="progressDistribution" class="status-list"></div>
+              <div class="progress-overview"><div id="overallRing" class="progress-ring" role="img" aria-label="Avance promedio"><strong>0%</strong><span>avance</span></div><div id="progressDistribution" class="status-list"></div></div>
             </article>
             <article class="card">
               <div class="card-head"><div><h2>Indicadores</h2><div class="card-sub">Actividades, variables y avance por indicador</div></div><button class="ghost-btn small-btn" data-go="indicators" type="button">Ver detalle</button></div>
@@ -928,8 +953,8 @@
         const traceable = records.filter(r => plain(r["Medio de verificación"]) && plain(r["Criterio de aceptación (evidencia de cumplimiento)"]) && plain(r.Evidencias)).length;
         const manualIndicators = indicators.filter(i => i.compliance !== "Sin valoración").length;
         const kpis = [
-          [`${percentFmt.format(overall)}%`, "Avance promedio", `${completed} concluidas${schedule.expected === null ? "" : ` · esperado ${percentFmt.format(schedule.expected)}%`}`, "teal"],
           [records.length, "Actividades", `${records.length} filas de seguimiento`, ""],
+          [`${percentFmt.format(overall)}%`, "Avance promedio", `${completed} concluidas${schedule.expected === null ? "" : ` · esperado ${percentFmt.format(schedule.expected)}%`}`, "teal"],
           [indicators.length, "Indicadores", `${indicators.length} agrupaciones detectadas`, ""],
           [critical, "Prioridad crítica", `${percentFmt.format(records.length ? critical / records.length * 100 : 0)}% del plan`, "red"],
           [overdue, "Vencidas", overdue ? "Requieren acción" : "Sin vencimientos al corte", overdue ? "red" : "green"],
@@ -937,6 +962,10 @@
         ];
         $("#progressSubtitle").textContent = records.length ? `Distribución de las ${records.length} actividades según su porcentaje registrado` : "No hay actividades en la copia pública";
         $("#kpiGrid").innerHTML = kpis.map(([value,label,note,color]) => `<article class="kpi ${color}"><div class="kpi-label">${esc(label)}</div><div class="kpi-value">${esc(value)}</div><div class="kpi-note">${esc(note)}</div></article>`).join("");
+        const ring = $("#overallRing");
+        ring.style.setProperty("--value", `${overall * 3.6}deg`);
+        $("strong", ring).textContent = `${percentFmt.format(overall)}%`;
+        ring.setAttribute("aria-label", `Avance promedio ${percentFmt.format(overall)}%`);
         const levels = [
           ["Concluidas", records.filter(r => activityAdvance(r) >= 100).length, "green"],
           ["Avance alto", records.filter(r => activityAdvance(r) >= 75 && activityAdvance(r) < 100).length, "teal"],

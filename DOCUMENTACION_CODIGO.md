@@ -4,7 +4,7 @@ Análisis de los archivos locales realizado el 12 de octubre de 2026. Las línea
 
 ## 1. Qué hace el proyecto
 
-Es un tablero web del Plan de Mejoras para la Acreditación Andina. Permite consultar actividades, buscar, filtrar, ordenar, exportar CSV, revisar indicadores y detectar inconsistencias. Una cuenta administradora puede iniciar sesión con Microsoft 365 y modificar celdas del Excel institucional.
+Es un tablero web del Plan de Mejoras para la Acreditación con el Parlamento Andino. Permite consultar actividades, buscar, filtrar, ordenar, exportar CSV, revisar indicadores y detectar inconsistencias. Una cuenta administradora puede iniciar sesión con Microsoft 365 y modificar celdas del Excel institucional.
 
 La interfaz está escrita con HTML, CSS y JavaScript sin un framework. No hay `package.json`, proceso de compilación ni servidor de aplicación en estos archivos. El script de sincronización usa Node.js y módulos de su biblioteca estándar.
 

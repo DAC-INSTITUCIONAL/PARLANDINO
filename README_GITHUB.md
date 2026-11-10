@@ -1,4 +1,4 @@
-# Plan de Mejoras para la Acreditación Andina
+# Plan de Mejoras para la Acreditación con el Parlamento Andino
 
 Tablero público de consulta conectado al Excel institucional. Cualquier persona
 con el enlace de GitHub Pages puede consultar, buscar y filtrar sin iniciar
