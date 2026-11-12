@@ -3,8 +3,8 @@
     "sourceName": "Plan_de_Mejoras_Acreditacion_Andina_D1514(3).xlsx",
     "sheetName": "Plan de Mejoras",
     "range": "Tabla PlanMejoras",
-    "generatedAt": "2026-11-12T19:23:52.075Z",
-    "totalActivities": 120,
+    "generatedAt": "2026-11-12T19:25:07.227Z",
+    "totalActivities": 121,
     "totalColumns": 33,
     "minDate": "2026-10-05",
     "maxDate": "2027-12-17",
@@ -4082,7 +4082,7 @@
       "Plazo (días hábiles)": "117",
       "Producto / Entregable": "Designaciones y actas de sesión",
       "Medio de verificación": "Oficios de designación, actas con registro de asistencia y oficio de remisión de las recomendaciones",
-      "Criterio de aceptación (evidencia de cumplimiento)": "Al menos dos sesiones realizadas",
+      "Criterio de aceptación (evidencia de cumplimiento)": "Representantes designados y a1 menos dos sesiones con asistencia de representantes comunitarios y recomendaciones registradas en acta",
       "Prioridad": "MEDIA",
       "Estado": "NO INICIADA",
       "Avance (%)": 0,
@@ -4095,6 +4095,42 @@
     },
     {
       "_excelRow": 111,
+      "ID": "A-FT06.3",
+      "Objetivo PEDI": "Sin objetivo PEDI asociado",
+      "Fase": "F2. Implementación operativa (abr – sep 2027)",
+      "Variable": "Factores Transversales de Contexto Andino",
+      "Código indicador": "",
+      "Indicador": "",
+      "Descripción Indicador": "",
+      "Tipo de indicador": "",
+      "Organismo": "",
+      "Fórmula de cálculo": "",
+      "Resultado": "0",
+      "Unidad": "No aplica",
+      "Tipo de actividad": "",
+      "Descripción del hallazgo": "",
+      "Actividad": "",
+      "Descripción de la actividad": "",
+      "Medida de mitigación": "",
+      "Responsable": "",
+      "Fecha de inicio": null,
+      "Fecha de fin": null,
+      "Plazo (días hábiles)": "",
+      "Producto / Entregable": "",
+      "Medio de verificación": "",
+      "Criterio de aceptación (evidencia de cumplimiento)": "",
+      "Prioridad": "",
+      "Estado": "",
+      "Avance (%)": 0,
+      "Avance esperado (%)": "",
+      "Semáforo de avance": "",
+      "Evidencias": "",
+      "Nivel de cumplimiento": "",
+      "Observaciones": "",
+      "Enlace evidencias": ""
+    },
+    {
+      "_excelRow": 112,
       "ID": "A-FT07.1",
       "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4130,7 +4166,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCSB_bP9f9wSZfYAWp7osgoAa4HqtpQyUTGwIg6JiUhbg8?e=3LhbjO"
     },
     {
-      "_excelRow": 112,
+      "_excelRow": 113,
       "ID": "A-FT07.2",
       "Objetivo PEDI": "OS-3 Garantizar la oferta académica diversificada y pertinente",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4166,7 +4202,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBJ4dBiOmDSQ4lnB2mkYs2UAQwYhrZozQNJ5IjCP4lJSTc?e=txFqL0"
     },
     {
-      "_excelRow": 113,
+      "_excelRow": 114,
       "ID": "A-FT08.1",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4202,7 +4238,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCy6g0lTga6S5y16f7KK8ZdARn_fqhLy371KF6clE0qt7I?e=EfKRnX"
     },
     {
-      "_excelRow": 114,
+      "_excelRow": 115,
       "ID": "A-FT08.2",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4238,7 +4274,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgA4b1BeR5bEQZ7vDpZyU0zkAU3YM-n_NAtv623_VaxYSsA?e=23j0bY"
     },
     {
-      "_excelRow": 115,
+      "_excelRow": 116,
       "ID": "A-FT09.1",
       "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4274,7 +4310,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgCtbakflb03S4IAusCaE7aYASZZRyfnft7_-Nu5DqhV4HA?e=dh5w01"
     },
     {
-      "_excelRow": 116,
+      "_excelRow": 117,
       "ID": "A-FT09.2",
       "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4310,7 +4346,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBnVZEeb0g8RKgCjv1evT-5Af1EQ5U5eElNJG9S8R0UTe8?e=9fJ2LL"
     },
     {
-      "_excelRow": 117,
+      "_excelRow": 118,
       "ID": "A-FT10.1",
       "Objetivo PEDI": "Sin objetivo PEDI asociado",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4346,7 +4382,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgBGOzxoLhzlQISKghEfUCO2AcydJwSkBrbjRlEYMQz8bjE?e=jfrCs6"
     },
     {
-      "_excelRow": 118,
+      "_excelRow": 119,
       "ID": "A-FT11.1",
       "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4382,7 +4418,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgDteVYE1-RYS50zOqH47fyaAS2Jk-I382SFT-2VrOKkrZk?e=tgsdXL"
     },
     {
-      "_excelRow": 119,
+      "_excelRow": 120,
       "ID": "A-FT11.2",
       "Objetivo PEDI": "OAC-1 Reducir la huella de carbono",
       "Fase": "F2. Implementación operativa (abr – sep 2027)",
@@ -4418,7 +4454,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC-gu-4yjlWTZ3y8VS1NPcDAXewaFZHnqiWjCAABy_ZxM4?e=ZcRjY3"
     },
     {
-      "_excelRow": 120,
+      "_excelRow": 121,
       "ID": "A-FT12.1",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F1. Diseño normativo e instrumentos (dic 2026 – mar 2027)",
@@ -4454,7 +4490,7 @@
       "Enlace evidencias": "https://ucacueedu-my.sharepoint.com/:f:/g/personal/institucional_jaac_ucacue_edu_ec/IgC2y5QlMcIbRL6q0uFWvlKjAUWO5CqMjuqrV9U6Na2VblE?e=RRQomB"
     },
     {
-      "_excelRow": 121,
+      "_excelRow": 122,
       "ID": "A-FT12.2",
       "Objetivo PEDI": "OS-5 Participar activamente en iniciativas de desarrollo local (vinculación)",
       "Fase": "F3. Medición, autoevaluación y postulación (oct – dic 2027)",
